@@ -1,0 +1,59 @@
+@import "tailwindcss";
+@config "../tailwind.config.js";
+
+@theme {
+  /* Backgrounds */
+  --color-primary-background: #EEF1F5;
+  --color-secondary-background: #E6E9EF;
+
+  /* Text */
+  --color-primary-text: #2B2F38;
+  --color-secondary-text: #6B7280;
+  --color-primary-accent: #607696;
+  --color-muted-labels: #9AA1AF;
+
+  /* Accents */
+  --color-accent-blue: #5A8DEE;
+  --color-accent-hover: #4A7DE0;
+  --color-soft-green: #6FCF97;
+}
+
+body {
+  background-color: #EEF1F5;
+}
+
+
+.view-site-btn {
+  /* Layout and Size */
+  display: inline-block;
+  
+  /* Typography */
+  color: #FFFFFF;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-decoration: none;
+  text-align: center;
+
+  /* Colors and Shape */
+  background: linear-gradient(to bottom, #7ba6d9 0%, #5289c7 100%);
+  border: 1px solid #4a7ab3;
+
+  /* Effects */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 
+              inset 0 1px 0 rgba(255, 255, 255, 0.3);
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+/* Hover State */
+.view-site-btn:hover {
+  background: linear-gradient(to bottom, #8bb3e2 0%, #6197d6 100%);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+  transform: translateY(-1px);
+}
+
+/* Click/Active State */
+.view-site-btn:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
