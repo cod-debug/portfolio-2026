@@ -18,10 +18,10 @@ function Header() {
                     {/* Desktop Navigation */}
                     <nav className="hidden md:flex">
                         <ul className="flex gap-6 md:gap-16 text-primary-accent">
-                            <li><a href="#">ME</a></li>
-                            <li><a href="#">ABOUT</a></li>
-                            <li><a href="#">PROJECTS</a></li>
-                            <li><a href="#">CONTACT</a></li>
+                            <li><a href="#home">ME</a></li>
+                            <li><a href="#about">ABOUT</a></li>
+                            <li><a href="#projects">PROJECTS</a></li>
+                            <li><a href="#contact">CONTACT</a></li>
                         </ul>
                     </nav>
 
@@ -52,12 +52,12 @@ function Header() {
 
                 {/* Mobile Menu */}
                 {isOpen && (
-                    <div className="md:hidden mt-2">
+                    <div className="md:hidden">
                         <ul className="flex flex-col gap-2 text-primary-accent absolute bg-primary-background w-full left-0 rounded-lg py-4 px-8">
-                            <li className="border-b border-muted-labels/20 py-2"><a href="#">ME</a></li>
-                            <li className="border-b border-muted-labels/20 py-2"><a href="#">ABOUT</a></li>
-                            <li className="border-b border-muted-labels/20 py-2"><a href="#">PROJECTS</a></li>
-                            <li className="border-b border-muted-labels/20 py-2"><a href="#">CONTACT</a></li>
+                            <li className="border-b border-muted-labels/20 py-2"><a href="#home">ME</a></li>
+                            <li className="border-b border-muted-labels/20 py-2"><a href="#about">ABOUT</a></li>
+                            <li className="border-b border-muted-labels/20 py-2"><a href="#projects">PROJECTS</a></li>
+                            <li className="border-b border-muted-labels/20 py-2"><a href="#contact">CONTACT</a></li>
                         </ul>
                     </div>
                 )}

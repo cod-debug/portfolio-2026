@@ -1,7 +1,8 @@
-import About from "./components/About"
-import Banner from "./components/Banner"
+import About from "./components/about/About"
+import Banner from "./components/banner/Banner"
 import Header from "./components/Header"
 import Separator from "./components/Separator"
+import Skills from "./components/skills/Skills"
 
 function App() {
 
@@ -11,6 +12,8 @@ function App() {
       <Banner />
       <Separator />
       <About />
+      <Separator />
+      <Skills />
     </main>
   )
 }

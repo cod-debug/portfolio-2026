@@ -22,6 +22,9 @@ body {
   background-color: #EEF1F5;
 }
 
+html{
+  scroll-behavior: smooth;
+}
 
 .view-site-btn {
   /* Layout and Size */

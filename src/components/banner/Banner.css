@@ -48,11 +48,13 @@
 }
 
 .learn-more-button-container-dark {
-    background-image: linear-gradient(32deg, #6f90ee, white);
+    background-image: linear-gradient(32deg, #6f90ee, #E3E9EA);
     width: fit-content;
-    box-shadow: 0px 1px 10px #7ca3eca4;
+    box-shadow: -3px 3px 6px #7e94d3;
 }
 
-.learn-more-button-container-dark button {
-    background-image: linear-gradient(45deg, #5A8DEE, transparent);
+.learn-more-button-container-dark:hover {
+    box-shadow: -6px 6px 12px #7e94d3;
+    transform: translateY(-3px);
+    transition: all 0.3s ease;
 }
