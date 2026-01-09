@@ -25,6 +25,12 @@ import nginxLogoImg from "../../assets/skills/nginx.png";
 import awsLogoImg from "../../assets/skills/aws.webp";
 import digitaloceanLogoImg from "../../assets/skills/digitalocean.png";
 import hostingerLogoImg from "../../assets/skills/hostinger.png";
+import githubLogoImg from "../../assets/skills/github.png";
+import jiraLogoImg from "../../assets/skills/jira.webp";
+import viteLogoImg from "../../assets/skills/vite.jpeg";
+import restApiLogoImg from "../../assets/skills/api.jpg";
+import linuxLogoImg from "../../assets/skills/linux.png";
+import cicdLogoImg from "../../assets/skills/cicd.png";
 
 const technicalSkillsProgrammingLanguages = [
     {
@@ -109,21 +115,27 @@ const technicalSkillsServers = [
 
 const technicalSkillsDevEnv = [
     {
-        skillName: "Github / Bitbucket / GitLab"
+        logo: githubLogoImg,
+        skillName: "Github / Bitbucket"
     },
     {
+        logo: jiraLogoImg,
         skillName: "Jira / Shortcut"
     },
     {
+        logo: viteLogoImg,
         skillName: "Vite / Webpack"
     },
     {
+        logo: restApiLogoImg,
         skillName: "REST APIs"
     },
     {
+        logo: linuxLogoImg,
         skillName: "Linux Server Management"
     },
     {
+        logo: cicdLogoImg,
         skillName: "CI/CD"
     },
 ]
@@ -217,7 +229,7 @@ function Skills() {
                     </div>
                 </div>
 
-                <div className="skills-container p-0.5 rounded-lg h-fit md:w-1/2 md:mx-auto md:col-span-2">
+                <div className="skills-container p-0.5 rounded-lg h-fit">
                     <div className="skills-inner rounded-lg">
                         <div className="translate-x-4 -translate-y-1/2 w-fit flex items-center  gap-2 bg-transparent">
                             <div className="skills-bullet"></div>
