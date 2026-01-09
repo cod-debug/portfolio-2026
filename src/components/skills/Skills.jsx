@@ -1,6 +1,7 @@
 import Container from "../Container";
 import "./Skills.css";
 import SkillItem from "./SkillItem";
+import Separator from "../Separator";
 
 import htmlLogoImg from "../../assets/skills/html.webp";
 import cssLogoImg from "../../assets/skills/css.png";
@@ -10,7 +11,20 @@ import vueJsLogoImg from "../../assets/skills/vuejs.png";
 import phpLogoImg from "../../assets/skills/php.png";
 import laravelLogoImg from "../../assets/skills/laravel.webp";
 import pythonLogoImg from "../../assets/skills/python.png";
-import Separator from "../Separator";
+import problemSolvingImg from "../../assets/skills/problem-solving.png";
+import teamworkImg from "../../assets/skills/teamwork.png";
+import communicationImg from "../../assets/skills/communication.jpg";
+import timeManagementImg from "../../assets/skills/time-management.png";
+import mysqlLogoImg from "../../assets/skills/mysql.png";
+import postgresqlLogoImg from "../../assets/skills/postgre.svg";
+import mongodbLogoImg from "../../assets/skills/mongodb.svg";
+import firebaseLogoImg from "../../assets/skills/firebase.png";
+import dockerLogoImg from "../../assets/skills/docker.png";
+import apacheLogoImg from "../../assets/skills/apache.png";
+import nginxLogoImg from "../../assets/skills/nginx.png";
+import awsLogoImg from "../../assets/skills/aws.webp";
+import digitaloceanLogoImg from "../../assets/skills/digitalocean.png";
+import hostingerLogoImg from "../../assets/skills/hostinger.png";
 
 const technicalSkillsProgrammingLanguages = [
     {
@@ -45,7 +59,93 @@ const technicalSkillsProgrammingLanguages = [
         logo: pythonLogoImg,
         skillName: "Python"
     }
+];
+
+const technicalSkillsDatabases = [
+    {
+        logo: mysqlLogoImg,
+        skillName: "MySQL"
+    },
+    {
+        logo: postgresqlLogoImg,
+        skillName: "PostgreSQL"
+    },
+    {
+        logo: mongodbLogoImg,
+        skillName: "MongoDB"
+    },
+    {
+        logo: firebaseLogoImg,
+        skillName: "Firebase"
+    },
+];
+
+const technicalSkillsServers = [
+    {
+        logo: dockerLogoImg,
+        skillName: "Docker"
+    },
+    {
+        logo: apacheLogoImg,
+        skillName: "Apache"
+    },
+    {
+        logo: nginxLogoImg,
+        skillName: "Nginx"
+    },
+    {
+        logo: awsLogoImg,
+        skillName: "AWS"
+    },
+    {
+        logo: digitaloceanLogoImg,
+        skillName: "DigitalOcean"
+    },
+    {
+        logo: hostingerLogoImg,
+        skillName: "Hostinger"
+    }
 ]
+
+const technicalSkillsDevEnv = [
+    {
+        skillName: "Github / Bitbucket / GitLab"
+    },
+    {
+        skillName: "Jira / Shortcut"
+    },
+    {
+        skillName: "Vite / Webpack"
+    },
+    {
+        skillName: "REST APIs"
+    },
+    {
+        skillName: "Linux Server Management"
+    },
+    {
+        skillName: "CI/CD"
+    },
+]
+
+const softSkills = [
+    {
+        logo: problemSolvingImg,
+        skillName: "Problem Solving"
+    },
+    {
+        logo: teamworkImg,
+        skillName: "Teamwork"
+    },
+    {
+        logo: communicationImg,
+        skillName: "Effective Communication"
+    },
+    {
+        logo: timeManagementImg,
+        skillName: "Time Management"
+    }
+];
 
 function Skills() {
     return (
@@ -59,7 +159,7 @@ function Skills() {
                         </div>
 
                         <div className="skills-list pt-2 px-8 pb-8">
-                            <div>Programming Langues / Frameworks</div>
+                            <div className="text-sm text-muted-labels mb-2">Programming Langues / Frameworks</div>
                             <Separator className="my-2" />
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-2">
                                 {
@@ -69,9 +169,55 @@ function Skills() {
                                 }
                             </div>
                         </div>
+                        
+                        <div className="skills-list pt-2 px-8 pb-8">
+                            <div className="text-sm text-muted-labels mb-2">Databases</div>
+                            <Separator className="my-2" />
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-2">
+                                {
+                                    technicalSkillsDatabases.map((skill) => (
+                                        <SkillItem key={skill.skillName} logo={skill.logo} skillName={skill.skillName} />
+                                    ))
+                                }
+                            </div>
+                        </div>
                     </div>
                 </div>
+                
                 <div className="skills-container p-0.5 rounded-lg h-fit">
+                    <div className="skills-inner rounded-lg">
+                        <div className="translate-x-4 -translate-y-1/2 w-fit flex items-center  gap-2 bg-transparent">
+                            <div className="skills-bullet"></div>
+                            <div className="font-bold">TOOLS</div>
+                        </div>
+                        
+                        <div className="skills-list pt-2 px-8 pb-8">
+                            <div className="text-sm text-muted-labels mb-2">DevOps, Servers & Infrastructure</div>
+                            <Separator className="my-2" />
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-2">
+                                {
+                                    technicalSkillsServers.map((skill) => (
+                                        <SkillItem key={skill.skillName} logo={skill.logo} skillName={skill.skillName} />
+                                    ))
+                                }
+                            </div>
+                        </div>
+                        
+                        <div className="skills-list pt-2 px-8 pb-8">
+                            <div className="text-sm text-muted-labels mb-2">Tools & Development Environment</div>
+                            <Separator className="my-2" />
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-2">
+                                {
+                                    technicalSkillsDevEnv.map((skill) => (
+                                        <SkillItem key={skill.skillName} logo={skill.logo} skillName={skill.skillName} />
+                                    ))
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="skills-container p-0.5 rounded-lg h-fit md:w-1/2 md:mx-auto md:col-span-2">
                     <div className="skills-inner rounded-lg">
                         <div className="translate-x-4 -translate-y-1/2 w-fit flex items-center  gap-2 bg-transparent">
                             <div className="skills-bullet"></div>
@@ -79,11 +225,11 @@ function Skills() {
                         </div>
 
                         <div className="skills-list pt-2 px-8 pb-8">
-                            <div>Programming Langues / Frameworks</div>
+                            <div className="text-sm text-muted-labels mb-2">Essential interpersonal abilities</div>
                             <Separator className="my-2" />
                             <div className="grid grid-cols-1 gap-2">
                                 {
-                                    technicalSkillsProgrammingLanguages.map((skill) => (
+                                    softSkills.map((skill) => (
                                         <SkillItem key={skill.skillName} logo={skill.logo} skillName={skill.skillName} />
                                     ))
                                 }
