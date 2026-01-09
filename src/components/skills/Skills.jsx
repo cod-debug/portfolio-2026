@@ -150,7 +150,7 @@ const softSkills = [
 function Skills() {
     return (
         <Container className="my-16 text-primary-accent" id="skills">
-            <div className="grid grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div className="skills-container p-0.5 rounded-lg h-fit">
                     <div className="skills-inner rounded-lg">
                         <div className="translate-x-4 -translate-y-1/2 w-fit flex items-center  gap-2 bg-transparent">
