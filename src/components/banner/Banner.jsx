@@ -10,7 +10,7 @@ function Banner() {
             <div className="flex flex-col md:flex-row justify-center items-center gap-12 md:gap-8 px-8 py-16">
                 <div className="w-full flex flex-col gap-3 text-center md:text-left">
                     <div className="text-primary-text text-xl">
-                        Hi, I'm Roy Dueñas
+                        Hi, I'm Roy!
                     </div>
                     <div className="text-primary-text text-4xl font-bold">
                         <span>Creating Modern &amp; </span>

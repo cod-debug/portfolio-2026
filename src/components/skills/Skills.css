@@ -1,0 +1,27 @@
+.skills-container {
+    background: linear-gradient(145deg, #ffffff, #d6d9dd);
+    box-shadow: 5px 5px 9px #989a9d,
+        -5px -5px 9px #ffffff;
+}
+
+.skills-inner {
+    background: #EEF1F5;
+    box-shadow: 20px 20px 60px #cacdd0,
+        -20px -20px 60px #ffffff;
+}
+
+.skills-bullet {
+    width: 12px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    display: inline-block;
+    background: linear-gradient(145deg, #ffffff, #d6d9dd);
+    box-shadow:  2px 2px 4px #7c7d7f,
+                -2px -2px 4px #ffffff;
+}
+
+.skill-icon {
+    background: #EEF1F5;
+    box-shadow: 2px 2px 3px #acaeb1,
+                -2px -2px 3px #ffffff;
+}

@@ -1,6 +1,6 @@
-function Separator(){
+function Separator({ className }){
     return(
-        <div className="h-px bg-muted-labels opacity-20"></div>
+        <div className={`h-px bg-muted-labels opacity-20 ${className}`}></div>
     )
 }
 
