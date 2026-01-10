@@ -10,7 +10,7 @@ function About() {
     const yearsOfExperience = year - startYear;
 
     return (
-        <Container className="my-8" id="about">
+        <Container className="my-12" id="about">
             <div className="flex items-center gap-2 mb-8">
                 <div className="font-bold rounded-full bg-[#D8DFE967] p-1 w-fit flex">
                     <RxCaretRight className="text-3xl text-accent-blue" />

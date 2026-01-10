@@ -1,5 +1,4 @@
 import MeImg from "../../assets/me.png";
-import "./Banner.css";
 import Button from "../Button";
 import Container from "../Container";
 import Separator from "../Separator";
