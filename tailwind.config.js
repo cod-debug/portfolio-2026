@@ -18,6 +18,9 @@ export default {
       },
     },
   },
+  safelist: [
+    'rounded-8xl',
+  ],
   plugins: [
   ],
   darkMode: 'class',

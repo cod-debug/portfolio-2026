@@ -7,7 +7,7 @@
     --color-secondary-background: #E6E9EF;
 
     /* Text */
-    --color-primary-text: #2B2F38;
+    --color-primary-text: #484f5f;
     --color-secondary-text: #6B7280;
     --color-primary-accent: #607696;
     --color-muted-labels: #9AA1AF;
@@ -19,7 +19,7 @@
 }
 
 body {
-    background-color: #EEF1F5;
+    background-color: var(--color-primary-background);
 }
 
 html {
@@ -71,7 +71,7 @@ html {
 
 .banner-me-img {
     border-radius: 50%;
-    background: #EEF1F5;
+    background: var(--color-primary-background);
     box-shadow: inset -20px 20px 60px #cacdd0,
         inset 20px -20px 60px #ffffff;
 }
@@ -92,24 +92,34 @@ html {
         4px -4px 8px #ffffff;
 }
 
+.learn-more-button-container-lighter {
+    background-color: var(--color-primary-background);
+    box-shadow: 3px 3px 4px #cdcfd3,
+        -3px -3px 4px #ffffff;
+
+}
+.learn-more-button-container-lighter>a {
+    background-color: var(--color-primary-background);
+}
+
 .learn-more-button {
     background: linear-gradient(225deg, #ffffff, #d6d9dd);
-    box-shadow: -5px 5px 10px #cacdd0,
-        5px -5px 10px #ffffff;
+    box-shadow: -3px 3px 6px #cacdd0,
+        3px -3px 6px #ffffff;
 }
 
 .experience-section,
 .contact-section {
-    background: #EEF1F5;
-    box-shadow: -8px 8px 16px #cacdd0,
-        8px -8px 16px #ffffff;
+    background: var(--color-primary-background);
+    box-shadow: -4px 4px 8px #cacdd0,
+        4px -4px 8px #ffffff;
 }
 
 .experience-inner,
 .contact-inner {
     background: linear-gradient(225deg, #ffffff, #d6d9dd);
-    box-shadow: -8px 8px 16px #cacdd0,
-        8px -8px 16px #ffffff;
+    box-shadow: -4px 4px 8px #cacdd0,
+        4px -4px 8px #ffffff;
 }
 
 .learn-more-button-container-dark {
@@ -125,7 +135,13 @@ html {
 }
 
 .project-card {
-    background: #EEF1F5;
+    background: var(--color-primary-background);
     box-shadow: 3px 3px 6px #cfd2d5,
         -3px -3px 6px #ffffff;
+}
+
+.project-card-img-holder {
+    background: var(--color-primary-background);
+    box-shadow: 2px 2px 5px #cacdd0,
+        -2px -2px 5px #ffffff;
 }
