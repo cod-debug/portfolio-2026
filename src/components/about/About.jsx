@@ -1,6 +1,6 @@
 import Button from "../Button";
 import Container from "../Container";
-import ProjectSamples from "../projects/ProjectSamples";
+import ProjectSamples from "../projects-sample/ProjectSamples";
 import Separator from "../Separator";
 import { RxCaretRight } from "react-icons/rx";
 

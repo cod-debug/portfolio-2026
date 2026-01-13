@@ -2,63 +2,63 @@
 @config "../tailwind.config.js";
 
 @theme {
-  /* Backgrounds */
-  --color-primary-background: #EEF1F5;
-  --color-secondary-background: #E6E9EF;
+    /* Backgrounds */
+    --color-primary-background: #EEF1F5;
+    --color-secondary-background: #E6E9EF;
 
-  /* Text */
-  --color-primary-text: #2B2F38;
-  --color-secondary-text: #6B7280;
-  --color-primary-accent: #607696;
-  --color-muted-labels: #9AA1AF;
+    /* Text */
+    --color-primary-text: #2B2F38;
+    --color-secondary-text: #6B7280;
+    --color-primary-accent: #607696;
+    --color-muted-labels: #9AA1AF;
 
-  /* Accents */
-  --color-accent-blue: #5A8DEE;
-  --color-accent-hover: #4A7DE0;
-  --color-soft-green: #6FCF97;
+    /* Accents */
+    --color-accent-blue: #5A8DEE;
+    --color-accent-hover: #4A7DE0;
+    --color-soft-green: #6FCF97;
 }
 
 body {
-  background-color: #EEF1F5;
+    background-color: #EEF1F5;
 }
 
-html{
-  scroll-behavior: smooth;
+html {
+    scroll-behavior: smooth;
 }
 
 .view-site-btn {
-  /* Layout and Size */
-  display: inline-block;
-  
-  /* Typography */
-  color: #FFFFFF;
-  font-weight: bold;
-  letter-spacing: 1px;
-  text-decoration: none;
-  text-align: center;
+    /* Layout and Size */
+    display: inline-block;
 
-  /* Colors and Shape */
-  background: linear-gradient(to bottom, #7ba6d9 0%, #5289c7 100%);
-  border: 1px solid #4a7ab3;
+    /* Typography */
+    color: #FFFFFF;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-align: center;
 
-  /* Effects */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 
-              inset 0 1px 0 rgba(255, 255, 255, 0.3);
-  transition: all 0.2s ease;
-  cursor: pointer;
+    /* Colors and Shape */
+    background: linear-gradient(to bottom, #7ba6d9 0%, #5289c7 100%);
+    border: 1px solid #4a7ab3;
+
+    /* Effects */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1),
+        inset 0 1px 0 rgba(255, 255, 255, 0.3);
+    transition: all 0.2s ease;
+    cursor: pointer;
 }
 
 /* Hover State */
 .view-site-btn:hover {
-  background: linear-gradient(to bottom, #8bb3e2 0%, #6197d6 100%);
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
-  transform: translateY(-1px);
+    background: linear-gradient(to bottom, #8bb3e2 0%, #6197d6 100%);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+    transform: translateY(-1px);
 }
 
 /* Click/Active State */
 .view-site-btn:active {
-  transform: translateY(1px);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transform: translateY(1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .banner-me-shadows {
@@ -122,4 +122,10 @@ html{
     box-shadow: -6px 6px 12px #7e94d3;
     transform: translateY(-3px);
     transition: all 0.3s ease;
+}
+
+.project-card {
+    background: #EEF1F5;
+    box-shadow: 3px 3px 6px #cfd2d5,
+        -3px -3px 6px #ffffff;
 }

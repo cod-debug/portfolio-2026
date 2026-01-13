@@ -5,6 +5,7 @@ import ProjectSampleItem from './ProjectSampleItem';
 import captchaImg from '../../assets/projects/captcha.PNG';
 import upversionImg from '../../assets/projects/upversion.PNG';
 import everglowImg from '../../assets/projects/everglow.PNG';
+import { Link } from 'react-router-dom';
 
 const sample_projects = [
     {
@@ -40,13 +41,15 @@ export default function ProjectSamples(){
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:px-4">
                 {
-                    sample_projects.map((project, index) => (
-                        <ProjectSampleItem key={index} title={project.title} imageSrc={project.imgSrc} link={project.link} linkDisplay={project.linkDisplay} />
+                    sample_projects.map((project) => (
+                        <ProjectSampleItem key={project.title} title={project.title} imageSrc={project.imgSrc} link={project.link} linkDisplay={project.linkDisplay} />
                     ))
                 }
             </div>
             <div className='p-4'>
-                <Button>SEE MORE</Button>
+                <Link to="/projects">
+                    <Button>SEE MORE</Button>
+                </Link>
             </div>
         </div>
     )

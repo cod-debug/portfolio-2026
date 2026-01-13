@@ -1,24 +1,25 @@
-import About from "./components/about/About"
-import Banner from "./components/banner/Banner"
-import Contact from "./components/contact/Contact"
-import Header from "./components/Header"
-import Separator from "./components/Separator"
-import Skills from "./components/skills/Skills"
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import HomePage from "./pages/HomePage";
+import ProjectsPage from "./pages/ProjectsPage";
+import Layout from "./layouts/Layout";
 
+const router = createBrowserRouter([
+  {
+    element: <Layout />,
+    children: [
+      {
+        path: "/",
+        element: <HomePage />,
+      },
+      {
+        path: "/projects",
+        element: <ProjectsPage />,
+      },
+    ],
+  },
+]);
 function App() {
-
-  return (
-    <main>
-      <Header />
-      <Banner />
-      <Separator />
-      <About />
-      <Separator />
-      <Skills />
-      <Separator />
-      <Contact />
-    </main>
-  )
+  return <RouterProvider router={router} />;
 }
 
 export default App

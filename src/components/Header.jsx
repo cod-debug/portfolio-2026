@@ -1,8 +1,15 @@
 import { useState } from "react";
 import Container from "./Container";
+import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 function Header() {
     const [isOpen, setIsOpen] = useState(false);
+    const scrollWithOffset = (el) => {
+        const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
+        const yOffset = -80; 
+        window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' }); 
+    }
 
     return (
         <div className="bg-primary-background sticky top-0 pt-4 pb-2 z-50">
@@ -19,10 +26,10 @@ function Header() {
                         {/* Desktop Navigation */}
                         <nav className="hidden md:flex">
                             <ul className="flex gap-6 md:gap-16 text-primary-accent">
-                                <li><a href="#home">ME</a></li>
-                                <li><a href="#about">ABOUT</a></li>
-                                <li><a href="#projects">PROJECTS</a></li>
-                                <li><a href="#contact">CONTACT</a></li>
+                                <li><HashLink smooth scroll={scrollWithOffset} to="/#home">ME</HashLink></li>
+                                <li><HashLink smooth scroll={scrollWithOffset} to="/#about">ABOUT</HashLink></li>
+                                <li><Link to="/projects">PROJECTS</Link></li>
+                                <li><HashLink smooth scroll={scrollWithOffset} to="/#contact">CONTACT</HashLink></li>
                             </ul>
                         </nav>
 
