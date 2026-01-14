@@ -18,7 +18,7 @@ function About() {
                 </div>
                 <div className="tracking-wider text-xl text-primary-text">ABOUT ME</div>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-12 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-12 gap-4 text-primary-text">
                 <div className="experience-section rounded-xl md:col-span-4 p-2">
                     <div className="experience-inner h-full rounded-xl p-4">
                         <div className="flex flex-col gap-4 h-full">

@@ -25,6 +25,16 @@ function Button({ className, link, children, btnType = "light", ...props }) {
                         {children}
                     </a>
                 )}
+                {!props.href && !link && (
+                    <div
+                        {...props}
+                        className={`block learn-more-button w-fit text-primary-accent cursor-pointer px-4 py-2 rounded-xl ${
+                            className || ""
+                        }`}
+                    >
+                        {children}
+                    </div>
+                )}
             </div>
         );
     };
