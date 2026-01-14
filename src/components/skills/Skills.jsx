@@ -197,7 +197,7 @@ function Skills() {
                 </div>
                 
                 <div className="skills-container p-0.5 rounded-lg h-fit">
-                    <div className="skills-inner rounded-lg">
+                    <div className="skills-inner rounded-lg group">
                         <div className="translate-x-4 -translate-y-1/2 w-fit flex items-center  gap-2 bg-transparent">
                             <div className="skills-bullet"></div>
                             <div className="font-bold">TOOLS</div>
@@ -230,7 +230,7 @@ function Skills() {
                 </div>
 
                 <div className="skills-container p-0.5 rounded-lg h-fit">
-                    <div className="skills-inner rounded-lg">
+                    <div className="skills-inner rounded-lg group">
                         <div className="translate-x-4 -translate-y-1/2 w-fit flex items-center  gap-2 bg-transparent">
                             <div className="skills-bullet"></div>
                             <div className="font-bold">SOFT SKILLS</div>
