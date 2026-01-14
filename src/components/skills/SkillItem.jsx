@@ -6,7 +6,7 @@ function SkillItem({ logo = null, skillName }) {
                     <img
                         src={logo}
                         alt={`${skillName} Logo`}
-                        className="skill-logo w-8"
+                        className="skill-logo w-8 grayscale-75 transition-all duration-300 group-hover:grayscale-0"
                     />
                 )}
             </div>

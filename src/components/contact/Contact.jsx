@@ -11,7 +11,7 @@ function Contact(){
             <div className="contact-section rounded-xl md:col-span-4 p-1 text-primary-accent my-8">
                 <div className="contact-inner h-full rounded-xl p-4">
                     <div className="flex flex-col gap-4 h-full">
-                        <div className="flex items-center font-bold gap-4">
+                        <div className="flex items-center font-bold gap-2">
                             <div className="flex gap-2">
                                 <div className="skills-bullet"></div> 
                                 <div className="skills-bullet"></div>

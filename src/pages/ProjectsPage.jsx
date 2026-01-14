@@ -7,6 +7,7 @@ import jkWeddingImg from "../assets/projects/jkwedding.PNG";
 import digicashImg from "../assets/projects/digicash.PNG";
 import Button from "../components/Button";
 import { useEffect } from "react";
+import ProjectItem from "../components/projects-page/ProjectItem";
 
 const sample_projects = [
     {
@@ -74,23 +75,7 @@ function ProjectsPage() {
 
             <div className="grid grid-cols-1 md:grid-cols-3 my-10 text-primary-text gap-8">
                 {sample_projects.map((project) => (
-                    <div
-                        key={project.title}
-                        className="project-card rounded-lg p-4 flex flex-col gap-4 h-full"
-                    >
-                        <div className="project-card-img-holder p-2 rounded-lg">
-                            <img
-                                alt={project.title}
-                                src={project.imgSrc}
-                                className="rounded-lg"
-                            />
-                        </div>
-                        <div className="font-medium tracking-wide">
-                            {project.title}
-                        </div>
-                        <div className="grow text-muted-labels">{project.description && <p>{project.description}</p>}</div>
-                        {project.link && <div className="flex justify-end"><Button className="rounded-4xl" btnType="light-lighter" target="_blank" href={project.link}>Visit Site</Button></div>}
-                    </div>
+                    <ProjectItem project={project} key={project.title} />
                 ))}
             </div>
         </Container>

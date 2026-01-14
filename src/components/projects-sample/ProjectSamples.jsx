@@ -47,9 +47,7 @@ export default function ProjectSamples(){
                 }
             </div>
             <div className='p-4'>
-                <Link to="/projects">
-                    <Button>SEE MORE</Button>
-                </Link>
+                <Button link="/projects">SEE MORE</Button>
             </div>
         </div>
     )

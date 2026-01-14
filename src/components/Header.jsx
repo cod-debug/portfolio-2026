@@ -62,10 +62,10 @@ function Header() {
                     {isOpen && (
                         <div className="md:hidden">
                             <ul className="flex flex-col gap-2 text-primary-accent absolute bg-primary-background w-full left-0 rounded-lg py-4 px-8">
-                                <li className="border-b border-muted-labels/20 py-2"><a href="#home">ME</a></li>
-                                <li className="border-b border-muted-labels/20 py-2"><a href="#about">ABOUT</a></li>
-                                <li className="border-b border-muted-labels/20 py-2"><a href="#projects">PROJECTS</a></li>
-                                <li className="border-b border-muted-labels/20 py-2"><a href="#contact">CONTACT</a></li>
+                                <li className="border-b border-muted-labels/20 py-2"><HashLink smooth scroll={scrollWithOffset} to="/#home">ME</HashLink></li>
+                                <li className="border-b border-muted-labels/20 py-2"><HashLink smooth scroll={scrollWithOffset} to="/#about">ABOUT</HashLink></li>
+                                <li className="border-b border-muted-labels/20 py-2"><Link to="/projects">PROJECTS</Link></li>
+                                <li className="border-b border-muted-labels/20 py-2"><HashLink smooth scroll={scrollWithOffset} to="/#contact">CONTACT</HashLink></li>
                             </ul>
                         </div>
                     )}

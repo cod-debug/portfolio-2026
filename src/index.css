@@ -27,35 +27,26 @@ html {
 }
 
 .view-site-btn {
-    /* Layout and Size */
     display: inline-block;
-
-    /* Typography */
     color: #FFFFFF;
     font-weight: bold;
     letter-spacing: 1px;
     text-decoration: none;
     text-align: center;
-
-    /* Colors and Shape */
     background: linear-gradient(to bottom, #7ba6d9 0%, #5289c7 100%);
     border: 1px solid #4a7ab3;
-
-    /* Effects */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1),
         inset 0 1px 0 rgba(255, 255, 255, 0.3);
     transition: all 0.2s ease;
     cursor: pointer;
 }
 
-/* Hover State */
 .view-site-btn:hover {
     background: linear-gradient(to bottom, #8bb3e2 0%, #6197d6 100%);
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
     transform: translateY(-1px);
 }
 
-/* Click/Active State */
 .view-site-btn:active {
     transform: translateY(1px);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -98,8 +89,19 @@ html {
         -3px -3px 4px #ffffff;
 
 }
+
 .learn-more-button-container-lighter>a {
     background-color: var(--color-primary-background);
+}
+
+.learn-more-button-container-light:hover {
+    background: linear-gradient(145deg, #d6d9dd, #ffffff);
+    box-shadow: 5px 5px 8px #dde0e4,
+        -5px -5px 8px #ffffff;
+}
+
+.learn-more-button-container-lighter:hover>a {
+    background: linear-gradient(145deg, #d6d9dd, #ffffff);
 }
 
 .learn-more-button {
@@ -145,3 +147,4 @@ html {
     box-shadow: 2px 2px 5px #cacdd0,
         -2px -2px 5px #ffffff;
 }
+

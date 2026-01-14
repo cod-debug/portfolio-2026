@@ -3,11 +3,12 @@ import "./ProjectSampleItem.css";
 
 function ProjectSampleItem({title, imageSrc, link, linkDisplay}){
     return(
-        <div className="sample-project p-0.5 w-full">
+        // add hover effect when hovering the whole div the image should not be grayscale
+        <a href={link} target="_blank" referrerPolicy="no-referrer" className="sample-project p-0.5 w-full group">
             <div className="sample-project-inner flex flex-col text-center text-primary-text">
                 <div className="py-4 px-2">{title}</div>
-                <div>
-                    <img src={imageSrc} alt={title} className="w-full" />
+                <div className="overflow-hidden">
+                    <img src={imageSrc} alt={title} className="w-full grayscale transition-all duration-300 group-hover:grayscale-0 group-hover:scale-125" />
                 </div>
                 <p className="py-4 text-muted-labels">{ linkDisplay }</p>
                 <div className="self-center p-4">
@@ -16,7 +17,7 @@ function ProjectSampleItem({title, imageSrc, link, linkDisplay}){
                     </Button>
                 </div>
             </div>
-        </div>
+        </a>
     )
 }
 
