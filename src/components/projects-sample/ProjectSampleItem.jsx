@@ -8,7 +8,7 @@ function ProjectSampleItem({title, imageSrc, link, linkDisplay}){
             <div className="sample-project-inner flex flex-col text-center text-primary-text">
                 <div className="py-4 px-2">{title}</div>
                 <div className="overflow-hidden">
-                    <img src={imageSrc} alt={title} className="w-full grayscale transition-all duration-300 group-hover:grayscale-0 group-hover:scale-125" />
+                    <img src={imageSrc} alt={title} className="w-full md:grayscale transition-all duration-300 group-hover:grayscale-0 group-hover:scale-125" />
                 </div>
                 <p className="py-4 text-muted-labels">{ linkDisplay }</p>
                 <div className="self-center p-4">
