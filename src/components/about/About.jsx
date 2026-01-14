@@ -22,7 +22,7 @@ function About() {
                 <div className="experience-section rounded-xl md:col-span-4 p-2">
                     <div className="experience-inner h-full rounded-xl p-4">
                         <div className="flex flex-col gap-4 h-full">
-                            <div className="flex items-center font-bold">
+                            <div className="flex items-center font-bold text-secondary-accent gap-4">
                                 <div className="text-8xl">{yearsOfExperience}+</div>
                                 <div>
                                     <div className="text-4xl">Years</div>
@@ -31,11 +31,9 @@ function About() {
                             </div>
                             <Separator />
                             <div className="grow">
-                                <p>Expert in Frontend &amp; Backend Development</p>
-                                <br />
-                                <p>Specializing in Php, Laravel, JavaScript, Vue, React, Node.js, Python, Django and more.</p>
+                                <p className="text-justify">I rebuilt a complex business web application from the ground up, migrating it from Angular to Vue.js (Quasar) in just three months. The platform serves multiple user types—seven in total—each with different access levels, tools, and workflows, resulting in a faster, more stable, and easier-to-maintain system. I also created an internal AI platform that allows company teams to easily use AI-powered features without worrying about technical complexity, helping streamline internal operations and future development.</p>
                             </div>
-                            <Button>LEARN MORE</Button>
+                            <Button link="/experience">LEARN MORE</Button>
                         </div>
                     </div>
                 </div>

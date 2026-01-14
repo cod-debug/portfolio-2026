@@ -163,11 +163,11 @@ function Skills() {
     return (
         <Container className="my-12 text-primary-accent" id="skills">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div className="skills-container p-0.5 rounded-lg h-fit">
+                <div className="skills-container p-0.5 rounded-lg h-fit border-t border-secondary-accent">
                     <div className="skills-inner rounded-lg group">
-                        <div className="translate-x-4 -translate-y-1/2 w-fit flex items-center  gap-2 bg-transparent">
+                        <div className="translate-x-4 -translate-y-[.9rem] w-fit flex items-center  gap-2 bg-transparent">
                             <div className="skills-bullet"></div>
-                            <div className="font-bold">TECHNICAL SKILLS</div>
+                            <div className="font-bold text-secondary-accent">TECHNICAL SKILLS</div>
                         </div>
 
                         <div className="skills-list pt-2 px-8 pb-8">
@@ -196,11 +196,11 @@ function Skills() {
                     </div>
                 </div>
                 
-                <div className="skills-container p-0.5 rounded-lg h-fit">
+                <div className="skills-container p-0.5 rounded-lg h-fit border-t border-secondary-accent">
                     <div className="skills-inner rounded-lg group">
-                        <div className="translate-x-4 -translate-y-1/2 w-fit flex items-center  gap-2 bg-transparent">
+                        <div className="translate-x-4 -translate-y-[.9rem] w-fit flex items-center  gap-2 bg-transparent">
                             <div className="skills-bullet"></div>
-                            <div className="font-bold">TOOLS</div>
+                            <div className="font-bold text-secondary-accent">TOOLS</div>
                         </div>
                         
                         <div className="skills-list pt-2 px-8 pb-8">
@@ -229,11 +229,11 @@ function Skills() {
                     </div>
                 </div>
 
-                <div className="skills-container p-0.5 rounded-lg h-fit">
+                <div className="skills-container p-0.5 rounded-lg h-fit border-t border-secondary-accent">
                     <div className="skills-inner rounded-lg group">
-                        <div className="translate-x-4 -translate-y-1/2 w-fit flex items-center  gap-2 bg-transparent">
+                        <div className="translate-x-4 -translate-y-[.9rem] w-fit flex items-center  gap-2 bg-transparent">
                             <div className="skills-bullet"></div>
-                            <div className="font-bold">SOFT SKILLS</div>
+                            <div className="font-bold text-secondary-accent">SOFT SKILLS</div>
                         </div>
 
                         <div className="skills-list pt-2 px-8 pb-8">

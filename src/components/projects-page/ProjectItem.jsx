@@ -13,9 +13,9 @@ function ProjectItem({ project }) {
                     className="rounded-lg"
                 />
             </div>
-            <div className="font-medium tracking-wide">{project.title}</div>
-            <div className="grow text-muted-labels">
-                {project.description && <p>{project.description}</p>}
+            <div className="font-medium tracking-wide text-accent-dark-blue text-lg">{project.title}</div>
+            <div className="grow text-secondary-text">
+                {project.description && <p dangerouslySetInnerHTML={{__html: project.description}}></p>}
             </div>
             {project.link && (
                 <div className="flex justify-end">

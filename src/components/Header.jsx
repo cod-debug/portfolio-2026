@@ -25,10 +25,11 @@ function Header() {
 
                         {/* Desktop Navigation */}
                         <nav className="hidden md:flex">
-                            <ul className="flex gap-6 md:gap-16 text-primary-accent">
+                            <ul className="flex gap-6 md:gap-16 text-steal-blue font-medium">
                                 <li><HashLink smooth scroll={scrollWithOffset} to="/#home">ME</HashLink></li>
                                 <li><HashLink smooth scroll={scrollWithOffset} to="/#about">ABOUT</HashLink></li>
                                 <li><Link to="/projects">PROJECTS</Link></li>
+                                <li><Link to="/experience">EXPERIENCE</Link></li>
                                 <li><HashLink smooth scroll={scrollWithOffset} to="/#contact">CONTACT</HashLink></li>
                             </ul>
                         </nav>
@@ -61,10 +62,11 @@ function Header() {
                     {/* Mobile Menu */}
                     {isOpen && (
                         <div className="md:hidden">
-                            <ul className="flex flex-col gap-2 text-primary-accent absolute bg-primary-background w-full left-0 rounded-lg py-4 px-8">
+                            <ul className="flex flex-col gap-2 text-steal-blue font-medium absolute bg-primary-background w-full left-0 rounded-lg py-4 px-8">
                                 <li className="border-b border-muted-labels/20 py-2"><HashLink smooth scroll={scrollWithOffset} to="/#home">ME</HashLink></li>
                                 <li className="border-b border-muted-labels/20 py-2"><HashLink smooth scroll={scrollWithOffset} to="/#about">ABOUT</HashLink></li>
                                 <li className="border-b border-muted-labels/20 py-2"><Link to="/projects">PROJECTS</Link></li>
+                                <li className="border-b border-muted-labels/20 py-2"><Link to="/experience">EXPERIENCE</Link></li>
                                 <li className="border-b border-muted-labels/20 py-2"><HashLink smooth scroll={scrollWithOffset} to="/#contact">CONTACT</HashLink></li>
                             </ul>
                         </div>

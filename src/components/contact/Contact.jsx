@@ -16,7 +16,7 @@ function Contact(){
                                 <div className="skills-bullet"></div> 
                                 <div className="skills-bullet"></div>
                             </div>
-                            <div>GET IN TOUCH</div>
+                            <div className="text-secondary-accent">GET IN TOUCH</div>
                             <Separator className="grow" />
                         </div>
                         <div className="grow">

@@ -16,7 +16,7 @@ const sample_projects = [
         link: "https://gldrp.com/10captcha/",
         linkDisplay: "gldrp.com/10captcha/",
         description:
-            "A web-based captcha solving platform built with React.js, focused on speed, usability, and a clean user interface for efficient task handling.",
+            "A web-based captcha solving platform built with <strong>React.js</strong>, focused on speed, usability, and a clean user interface for efficient task handling.",
     },
     {
         title: "Up Version Website",
@@ -24,7 +24,7 @@ const sample_projects = [
         link: "https://gldrp.com/upversion/#/",
         linkDisplay: "gldrp.com/upversion/",
         description:
-            "A modern website for a graphics design school built using React.js, showcasing programs, services, and creative works with a visually engaging layout.",
+            "A modern website for a graphics design school built using <strong>React.js</strong>, showcasing programs, services, and creative works with a visually engaging layout.",
     },
     {
         title: "Interactive Event Website",
@@ -32,7 +32,7 @@ const sample_projects = [
         link: "https://yfceverglow.gldrp.com/",
         linkDisplay: "yfceverglow.gldrp.com",
         description:
-            "An interactive conference website for an NGO, featuring dynamic buttons and participant experience uploads, built with React.js on the frontend and Laravel on the backend.",
+            "An interactive conference website for an NGO, featuring dynamic buttons and participant experience uploads, built with <strong>React.js</strong> on the frontend and <strong>Laravel</strong> on the backend.",
     },
     {
         title: "Optekpay Website",
@@ -40,19 +40,19 @@ const sample_projects = [
         link: "https://optekpay.com/",
         linkDisplay: "optekpay.com",
         description:
-            "A fintech company website built with React.js, highlighting services, features, and user testimonials through a sleek and professional design.",
+            "A fintech company website built with <strong>React.js</strong>, highlighting services, features, and user testimonials through a sleek and professional design.",
     },
     {
         title: "Jhonna & Kerwin Wedding Website",
         imgSrc: jkWeddingImg,
         link: "https://wedding.gldrp.com/",
-        description: "A wedding invitation website built with React.js, providing event details, RSVP functionality, entourage, preferred gifts, and a gallery to celebrate the couple's special day.",
+        description: "A wedding invitation website built with <strong>React.js</strong>, providing event details, RSVP functionality, entourage, preferred gifts, and a gallery to celebrate the couple's special day.",
     },
     {
         title: "Digicash Website",
         imgSrc: digicashImg,
         link: "https://digicash.gldrp.com/",
-        description: "A digital wallet service website built with Next.js, showcasing features, security measures, and user benefits through a modern and user-friendly interface.",
+        description: "A digital wallet service website built with <strong>Next.js</strong>, showcasing features, security measures, and user benefits through a modern and user-friendly interface.",
     }
 ];
 
@@ -63,7 +63,7 @@ function ProjectsPage() {
     return (
         <Container>
             <div className="text-center p-4 gap-4 flex flex-col">
-                <h1 className="text-4xl font-bold mt-12 text-primary-accent">
+                <h1 className="text-4xl font-bold mt-12 text-steal-blue">
                     PROJECTS
                 </h1>
                 <p className="text-muted-labels">

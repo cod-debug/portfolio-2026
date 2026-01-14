@@ -34,7 +34,7 @@ export default function ProjectSamples(){
                 <div className='w-10'>
                     <Separator />
                 </div>
-                <div className='font-bold text-primary-accent text-xl tracking-widest'>PROJECTS</div>
+                <div className='font-bold text-secondary-accent text-xl tracking-widest'>PROJECTS</div>
                 <div className='grow'>
                     <Separator />
                 </div>

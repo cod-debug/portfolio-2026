@@ -1,11 +1,11 @@
 .sample-project {
     background: #EEF1F5;
-    box-shadow: 5px 5px 20px #cacdd0,
-        -5px -5px 20px #ffffff;
+    box-shadow: 3px 3px 6px #cacdd0,
+        -3px -3px 6px #ffffff;
 }
 
 .sample-project-inner {
     background: linear-gradient(145deg, #ffffff, #d6d9dd);
-    box-shadow: 5px 5px 10px #cacdd0,
-        -5px -5px 10px #ffffff;
+    box-shadow: 2px 2px 4px #cacdd0,
+        -2px -2px 4px #ffffff;
 }
