@@ -18,6 +18,29 @@
     --color-soft-green: #6FCF97;
 }
 
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar
+{
+	width: 6px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb
+{
+	border-radius: 3px;
+	background-image: -webkit-gradient(linear,
+									   left bottom,
+									   left top,
+									   color-stop(0.44, #9AA1AF),
+									   color-stop(0.72, #6B7280));
+}
+
 body {
     background-color: var(--color-primary-background);
 }
@@ -25,6 +48,18 @@ body {
 html {
     scroll-behavior: smooth;
 }
+
+.scroll-progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(to left, #5289c7, #7ba6d9);
+  transform-origin: 0%;
+  z-index: 10001;
+}
+
 
 .view-site-btn {
     display: inline-block;

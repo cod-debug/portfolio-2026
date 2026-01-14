@@ -15,7 +15,7 @@ function Button({ className, link, children, btnType = "light", ...props }) {
                         {children}
                     </Link>
                 )}
-                {!link && (
+                {props.href && (
                     <a
                         {...props}
                         className={`block learn-more-button w-fit text-primary-accent cursor-pointer px-4 py-2 rounded-xl ${
@@ -34,14 +34,26 @@ function Button({ className, link, children, btnType = "light", ...props }) {
             output = function () {
                 return (
                     <div className="learn-more-button-container-dark p-0.5 rounded-sm text-white">
-                        <a
-                            className={`block rounded-sm px-3 bg-accent-blue py-1 ${
-                                className || ""
-                            }`}
-                            {...props}
-                        >
-                            {children}
-                        </a>
+                        {props.href && (
+                            <a
+                                className={`block rounded-sm px-3 bg-accent-blue py-1 ${
+                                    className || ""
+                                }`}
+                                {...props}
+                            >
+                                {children}
+                            </a>
+                        )}
+                        {!props.href && (
+                            <div
+                                className={`block rounded-sm px-3 bg-accent-blue py-1 ${
+                                    className || ""
+                                }`}
+                                {...props}
+                            >
+                                {children}
+                            </div>
+                        )}
                     </div>
                 );
             };
@@ -49,7 +61,11 @@ function Button({ className, link, children, btnType = "light", ...props }) {
         case "light-lighter":
             output = function () {
                 return (
-                    <div className={`learn-more-button-container-lighter w-fit rounded-2xl ${className || ""}`}>
+                    <div
+                        className={`learn-more-button-container-lighter w-fit rounded-2xl ${
+                            className || ""
+                        }`}
+                    >
                         <a
                             {...props}
                             className={`block w-fit text-primary-accent cursor-pointer px-4 py-1 rounded-xl ${

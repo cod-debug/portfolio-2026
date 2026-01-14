@@ -12,7 +12,7 @@ function ProjectSampleItem({title, imageSrc, link, linkDisplay}){
                 </div>
                 <p className="py-4 text-muted-labels">{ linkDisplay }</p>
                 <div className="self-center p-4">
-                    <Button btnType="primary" href={link} target="_blank" rel="noopener noreferrer">
+                    <Button btnType="primary" target="_blank" rel="noopener noreferrer">
                         VIEW PROJECT
                     </Button>
                 </div>
