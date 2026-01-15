@@ -58,7 +58,11 @@ const sample_projects = [
 
 function ProjectsPage() {
     useEffect(() => {
+        document.documentElement.style.scrollBehavior = 'auto';
         window.scrollTo(0, 0);
+        setTimeout(() => {
+            document.documentElement.style.scrollBehavior = 'smooth';
+        }, 0);
     }, []);
     return (
         <Container>

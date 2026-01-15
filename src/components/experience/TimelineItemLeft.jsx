@@ -1,6 +1,6 @@
 function TimelineItemLeft({timelineItem}) {
     return(
-        <div className="flex items-center justify-center gap-8 -my-5">
+        <div className="flex flex-col md:flex-row items-center justify-center gap-8 mt-16 md:-my-5">
             <div className="flex-1 p-3xl text-accent-dark-blue ">
                 <div className="timeline-box rounded-xl">
                     <div className="timeline-box-inner rounded-xl p-4 flex flex-col gap-4">
@@ -13,7 +13,7 @@ function TimelineItemLeft({timelineItem}) {
                     </div>
                 </div>
             </div>
-            <div className="flex flex-col items-center relative">
+            <div className="hidden md:flex flex-col items-center relative">
                 <div className="timeline-circle w-15">
                     <div className="timeline-circle-inner"></div>
                 </div>
