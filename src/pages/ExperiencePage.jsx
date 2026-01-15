@@ -26,13 +26,13 @@ const timelineData = [
     },
     {
         position: "Web Developer",
-        company: "Coders Tribe",
+        company: "323Col Solutions",
         duration: "June 2020 - August 2020 (part-time)",
         description: "Created their own website. <strong>Technology used: HTML, CSS, JavaScript, PHP</strong>"
     },
     {
         position: "Web Developer",
-        company: "323Col Solutions",
+        company: "Coders Tribe",
         duration: "June 2020 - August 2020 (part-time)",
         description: "Created an election voting app for doctors. Technology used: <strong>HTML, CSS, JavaScript, Django (Python)</strong>"
     },
