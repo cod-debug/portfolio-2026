@@ -8,6 +8,7 @@ import digicashImg from "../assets/projects/digicash.PNG";
 import Button from "../components/Button";
 import { useEffect } from "react";
 import ProjectItem from "../components/projects-page/ProjectItem";
+import Separator from "../components/Separator";
 
 const sample_projects = [
     {
@@ -58,11 +59,7 @@ const sample_projects = [
 
 function ProjectsPage() {
     useEffect(() => {
-        document.documentElement.style.scrollBehavior = 'auto';
         window.scrollTo(0, 0);
-        setTimeout(() => {
-            document.documentElement.style.scrollBehavior = 'smooth';
-        }, 0);
     }, []);
     return (
         <Container>
@@ -82,6 +79,8 @@ function ProjectsPage() {
                     <ProjectItem project={project} key={project.title} />
                 ))}
             </div>
+            <Separator className="my-8" />
+            <p className="text-muted-labels mb-8">More web application projects will be posted soon...</p>
         </Container>
     );
 }
