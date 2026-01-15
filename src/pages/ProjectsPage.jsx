@@ -61,6 +61,10 @@ const sample_projects = [
 ];
 
 function ProjectsPage() {
+    const screenSize = window.innerWidth;
+    const mdSize = 768;
+    const isLessThanMd = screenSize < mdSize;
+
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
@@ -85,7 +89,7 @@ function ProjectsPage() {
                 {sample_projects.map((project, index) => (
                     <ProjectItem
                         project={project}
-                        animationDelay={((index % 6) + 1) * 0.2}
+                        animationDelay={((index % (isLessThanMd ? 1 : 6)) + 1) * 0.2}
                         key={project.title}
                     />
                 ))}
