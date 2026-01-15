@@ -1,6 +1,8 @@
 import { Outlet } from "react-router-dom";
 import Header from "../components/Header";
+import Contact from "../components/contact/Contact";
 import { motion, useScroll } from "framer-motion";
+import Separator from "../components/Separator";
 
 function Layout() {
   const { scrollYProgress } = useScroll();
@@ -13,6 +15,9 @@ function Layout() {
       />
       <Header />
       <Outlet />
+      
+      <Separator />
+      <Contact />
     </main>
   );
 }

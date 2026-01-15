@@ -9,6 +9,7 @@ import Button from "../components/Button";
 import { useEffect } from "react";
 import ProjectItem from "../components/projects-page/ProjectItem";
 import Separator from "../components/Separator";
+import { FadeInLeft, FadeInRight } from "../components/animations/Animations";
 
 const sample_projects = [
     {
@@ -47,14 +48,16 @@ const sample_projects = [
         title: "Jhonna & Kerwin Wedding Website",
         imgSrc: jkWeddingImg,
         link: "https://wedding.gldrp.com/",
-        description: "A wedding invitation website built with <strong>React.js</strong>, providing event details, RSVP functionality, entourage, preferred gifts, and a gallery to celebrate the couple's special day.",
+        description:
+            "A wedding invitation website built with <strong>React.js</strong>, providing event details, RSVP functionality, entourage, preferred gifts, and a gallery to celebrate the couple's special day.",
     },
     {
         title: "Digicash Website",
         imgSrc: digicashImg,
         link: "https://digicash.gldrp.com/",
-        description: "A digital wallet service website built with <strong>Next.js</strong>, showcasing features, security measures, and user benefits through a modern and user-friendly interface.",
-    }
+        description:
+            "A digital wallet service website built with <strong>Next.js</strong>, showcasing features, security measures, and user benefits through a modern and user-friendly interface.",
+    },
 ];
 
 function ProjectsPage() {
@@ -64,23 +67,33 @@ function ProjectsPage() {
     return (
         <Container>
             <div className="text-center p-4 gap-4 flex flex-col">
-                <h1 className="text-4xl font-bold mt-12 text-steal-blue">
-                    PROJECTS
-                </h1>
-                <p className="text-muted-labels">
-                    A collection of projects I've built using modern web
-                    technologies, focusing on usability, performance and clean
-                    design.
-                </p>
+                <FadeInRight>
+                    <h1 className="text-4xl font-bold mt-12 text-steal-blue">
+                        PROJECTS
+                    </h1>
+                </FadeInRight>
+                <FadeInLeft>
+                    <p className="text-muted-labels">
+                        A collection of projects I've built using modern web
+                        technologies, focusing on usability, performance and
+                        clean design.
+                    </p>
+                </FadeInLeft>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 my-10 text-primary-text gap-8">
-                {sample_projects.map((project) => (
-                    <ProjectItem project={project} key={project.title} />
+                {sample_projects.map((project, index) => (
+                    <ProjectItem
+                        project={project}
+                        animationDelay={((index % 6) + 1) * 0.2}
+                        key={project.title}
+                    />
                 ))}
             </div>
             <Separator className="my-8" />
-            <p className="text-muted-labels mb-8">More web application projects will be posted soon...</p>
+            <p className="text-muted-labels mb-8">
+                More web application projects will be posted soon...
+            </p>
         </Container>
     );
 }

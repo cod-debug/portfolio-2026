@@ -30,7 +30,7 @@ function Header() {
                                 <li><HashLink smooth scroll={scrollWithOffset} to="/#about">ABOUT</HashLink></li>
                                 <li><Link to="/projects">PROJECTS</Link></li>
                                 <li><Link to="/experience">EXPERIENCE</Link></li>
-                                <li><HashLink smooth scroll={scrollWithOffset} to="/#contact">CONTACT</HashLink></li>
+                                <li><HashLink smooth scroll={scrollWithOffset} to="#contact">CONTACT</HashLink></li>
                             </ul>
                         </nav>
 

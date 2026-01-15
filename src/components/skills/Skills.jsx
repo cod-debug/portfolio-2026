@@ -31,224 +31,258 @@ import viteLogoImg from "../../assets/skills/vite.jpeg";
 import restApiLogoImg from "../../assets/skills/api.jpg";
 import linuxLogoImg from "../../assets/skills/linux.png";
 import cicdLogoImg from "../../assets/skills/cicd.png";
+import { FadeInLeft, FadeInRight } from "../animations/Animations";
 
 const technicalSkillsProgrammingLanguages = [
     {
         logo: phpLogoImg,
-        skillName: "PHP"
+        skillName: "PHP",
     },
     {
         logo: laravelLogoImg,
-        skillName: "Laravel"
+        skillName: "Laravel",
     },
     {
         logo: htmlLogoImg,
-        skillName: "HTML5"
+        skillName: "HTML5",
     },
     {
         logo: cssLogoImg,
-        skillName: "CSS3"
+        skillName: "CSS3",
     },
     {
         logo: javascriptLogoImg,
-        skillName: "JavaScript"
+        skillName: "JavaScript",
     },
     {
         logo: reactLogoImg,
-        skillName: "React"
+        skillName: "React",
     },
     {
         logo: vueJsLogoImg,
-        skillName: "Vue.js"
+        skillName: "Vue.js",
     },
     {
         logo: pythonLogoImg,
-        skillName: "Python"
-    }
+        skillName: "Python",
+    },
 ];
 
 const technicalSkillsDatabases = [
     {
         logo: mysqlLogoImg,
-        skillName: "MySQL"
+        skillName: "MySQL",
     },
     {
         logo: postgresqlLogoImg,
-        skillName: "PostgreSQL"
+        skillName: "PostgreSQL",
     },
     {
         logo: mongodbLogoImg,
-        skillName: "MongoDB"
+        skillName: "MongoDB",
     },
     {
         logo: firebaseLogoImg,
-        skillName: "Firebase"
+        skillName: "Firebase",
     },
 ];
 
 const technicalSkillsServers = [
     {
         logo: dockerLogoImg,
-        skillName: "Docker"
+        skillName: "Docker",
     },
     {
         logo: apacheLogoImg,
-        skillName: "Apache"
+        skillName: "Apache",
     },
     {
         logo: nginxLogoImg,
-        skillName: "Nginx"
+        skillName: "Nginx",
     },
     {
         logo: awsLogoImg,
-        skillName: "AWS"
+        skillName: "AWS",
     },
     {
         logo: digitaloceanLogoImg,
-        skillName: "DigitalOcean"
+        skillName: "DigitalOcean",
     },
     {
         logo: hostingerLogoImg,
-        skillName: "Hostinger"
-    }
-]
+        skillName: "Hostinger",
+    },
+];
 
 const technicalSkillsDevEnv = [
     {
         logo: githubLogoImg,
-        skillName: "Github / Bitbucket"
+        skillName: "Github / Bitbucket",
     },
     {
         logo: jiraLogoImg,
-        skillName: "Jira / Shortcut"
+        skillName: "Jira / Shortcut",
     },
     {
         logo: viteLogoImg,
-        skillName: "Vite / Webpack"
+        skillName: "Vite / Webpack",
     },
     {
         logo: restApiLogoImg,
-        skillName: "REST APIs"
+        skillName: "REST APIs",
     },
     {
         logo: linuxLogoImg,
-        skillName: "Linux Server Management"
+        skillName: "Linux Server Management",
     },
     {
         logo: cicdLogoImg,
-        skillName: "CI/CD"
+        skillName: "CI/CD",
     },
-]
+];
 
 const softSkills = [
     {
         logo: problemSolvingImg,
-        skillName: "Problem Solving"
+        skillName: "Problem Solving",
     },
     {
         logo: teamworkImg,
-        skillName: "Teamwork"
+        skillName: "Teamwork",
     },
     {
         logo: communicationImg,
-        skillName: "Effective Communication"
+        skillName: "Effective Communication",
     },
     {
         logo: timeManagementImg,
-        skillName: "Time Management"
-    }
+        skillName: "Time Management",
+    },
 ];
 
 function Skills() {
     return (
         <Container className="my-12 text-primary-accent" id="skills">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div className="skills-container p-0.5 rounded-lg h-fit border-t border-secondary-accent">
-                    <div className="skills-inner rounded-lg group">
-                        <div className="translate-x-4 -translate-y-[.9rem] w-fit flex items-center  gap-2 bg-transparent">
-                            <div className="skills-bullet"></div>
-                            <div className="font-bold text-secondary-accent">TECHNICAL SKILLS</div>
-                        </div>
-
-                        <div className="skills-list pt-2 px-8 pb-8">
-                            <div className="text-sm text-muted-labels mb-2">Programming Langues / Frameworks</div>
-                            <Separator className="my-2" />
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-2">
-                                {
-                                    technicalSkillsProgrammingLanguages.map((skill) => (
-                                        <SkillItem key={skill.skillName} logo={skill.logo} skillName={skill.skillName} />
-                                    ))
-                                }
+                <FadeInRight>
+                    <div className="skills-container p-0.5 rounded-lg h-fit border-t border-secondary-accent">
+                        <div className="skills-inner rounded-lg group">
+                            <div className="translate-x-4 -translate-y-[.9rem] w-fit flex items-center  gap-2 bg-transparent">
+                                <div className="skills-bullet"></div>
+                                <div className="font-bold text-secondary-accent">
+                                    TECHNICAL SKILLS
+                                </div>
                             </div>
-                        </div>
-                        
-                        <div className="skills-list pt-2 px-8 pb-8">
-                            <div className="text-sm text-muted-labels mb-2">Databases</div>
-                            <Separator className="my-2" />
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-2">
-                                {
-                                    technicalSkillsDatabases.map((skill) => (
-                                        <SkillItem key={skill.skillName} logo={skill.logo} skillName={skill.skillName} />
-                                    ))
-                                }
+
+                            <div className="skills-list pt-2 px-8 pb-8">
+                                <div className="text-sm text-muted-labels mb-2">
+                                    Programming Langues / Frameworks
+                                </div>
+                                <Separator className="my-2" />
+                                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-2">
+                                    {technicalSkillsProgrammingLanguages.map(
+                                        (skill) => (
+                                            <SkillItem
+                                                key={skill.skillName}
+                                                logo={skill.logo}
+                                                skillName={skill.skillName}
+                                            />
+                                        ),
+                                    )}
+                                </div>
+                            </div>
+
+                            <div className="skills-list pt-2 px-8 pb-8">
+                                <div className="text-sm text-muted-labels mb-2">
+                                    Databases
+                                </div>
+                                <Separator className="my-2" />
+                                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-2">
+                                    {technicalSkillsDatabases.map((skill) => (
+                                        <SkillItem
+                                            key={skill.skillName}
+                                            logo={skill.logo}
+                                            skillName={skill.skillName}
+                                        />
+                                    ))}
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                
-                <div className="skills-container p-0.5 rounded-lg h-fit border-t border-secondary-accent">
-                    <div className="skills-inner rounded-lg group">
-                        <div className="translate-x-4 -translate-y-[.9rem] w-fit flex items-center  gap-2 bg-transparent">
-                            <div className="skills-bullet"></div>
-                            <div className="font-bold text-secondary-accent">TOOLS</div>
-                        </div>
-                        
-                        <div className="skills-list pt-2 px-8 pb-8">
-                            <div className="text-sm text-muted-labels mb-2">DevOps, Servers & Infrastructure</div>
-                            <Separator className="my-2" />
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-2">
-                                {
-                                    technicalSkillsServers.map((skill) => (
-                                        <SkillItem key={skill.skillName} logo={skill.logo} skillName={skill.skillName} />
-                                    ))
-                                }
+                </FadeInRight>
+
+                <FadeInLeft>
+                    <div className="skills-container p-0.5 rounded-lg h-fit border-t border-secondary-accent">
+                        <div className="skills-inner rounded-lg group">
+                            <div className="translate-x-4 -translate-y-[.9rem] w-fit flex items-center  gap-2 bg-transparent">
+                                <div className="skills-bullet"></div>
+                                <div className="font-bold text-secondary-accent">
+                                    TOOLS
+                                </div>
                             </div>
-                        </div>
-                        
-                        <div className="skills-list pt-2 px-8 pb-8">
-                            <div className="text-sm text-muted-labels mb-2">Tools & Development Environment</div>
-                            <Separator className="my-2" />
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-2">
-                                {
-                                    technicalSkillsDevEnv.map((skill) => (
-                                        <SkillItem key={skill.skillName} logo={skill.logo} skillName={skill.skillName} />
-                                    ))
-                                }
+
+                            <div className="skills-list pt-2 px-8 pb-8">
+                                <div className="text-sm text-muted-labels mb-2">
+                                    DevOps, Servers & Infrastructure
+                                </div>
+                                <Separator className="my-2" />
+                                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-2">
+                                    {technicalSkillsServers.map((skill) => (
+                                        <SkillItem
+                                            key={skill.skillName}
+                                            logo={skill.logo}
+                                            skillName={skill.skillName}
+                                        />
+                                    ))}
+                                </div>
+                            </div>
+
+                            <div className="skills-list pt-2 px-8 pb-8">
+                                <div className="text-sm text-muted-labels mb-2">
+                                    Tools & Development Environment
+                                </div>
+                                <Separator className="my-2" />
+                                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-2">
+                                    {technicalSkillsDevEnv.map((skill) => (
+                                        <SkillItem
+                                            key={skill.skillName}
+                                            logo={skill.logo}
+                                            skillName={skill.skillName}
+                                        />
+                                    ))}
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                </FadeInLeft>
+                <FadeInRight>
+                    <div className="skills-container p-0.5 rounded-lg h-fit border-t border-secondary-accent">
+                        <div className="skills-inner rounded-lg group">
+                            <div className="translate-x-4 -translate-y-[.9rem] w-fit flex items-center  gap-2 bg-transparent">
+                                <div className="skills-bullet"></div>
+                                <div className="font-bold text-secondary-accent">
+                                    SOFT SKILLS
+                                </div>
+                            </div>
 
-                <div className="skills-container p-0.5 rounded-lg h-fit border-t border-secondary-accent">
-                    <div className="skills-inner rounded-lg group">
-                        <div className="translate-x-4 -translate-y-[.9rem] w-fit flex items-center  gap-2 bg-transparent">
-                            <div className="skills-bullet"></div>
-                            <div className="font-bold text-secondary-accent">SOFT SKILLS</div>
-                        </div>
-
-                        <div className="skills-list pt-2 px-8 pb-8">
-                            <div className="text-sm text-muted-labels mb-2">Essential interpersonal abilities</div>
-                            <Separator className="my-2" />
-                            <div className="grid grid-cols-1 gap-2">
-                                {
-                                    softSkills.map((skill) => (
-                                        <SkillItem key={skill.skillName} logo={skill.logo} skillName={skill.skillName} />
-                                    ))
-                                }
+                            <div className="skills-list pt-2 px-8 pb-8">
+                                <div className="text-sm text-muted-labels mb-2">
+                                    Essential interpersonal abilities
+                                </div>
+                                <Separator className="my-2" />
+                                <div className="grid grid-cols-1 gap-2">
+                                    {softSkills.map((skill) => (
+                                        <SkillItem
+                                            key={skill.skillName}
+                                            logo={skill.logo}
+                                            skillName={skill.skillName}
+                                        />
+                                    ))}
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                </FadeInRight>
             </div>
         </Container>
     );
