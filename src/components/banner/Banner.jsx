@@ -14,7 +14,7 @@ function Banner() {
                             Hi, I'm Roy!
                         </div>
                     </FadeInRight>
-                    <FadeInRight>
+                    <FadeInRight delay={0.4}>
                         <div className="text-primary-text text-4xl font-bold">
                             <span>Creating Modern &amp; </span>
                             <span className="text-primary-accent">
@@ -23,13 +23,13 @@ function Banner() {
                         </div>
                     </FadeInRight>
                     <Separator />
-                    <FadeInRight>
+                    <FadeInRight delay={0.6}>
                         <div className="text-primary-text mb-4">
                             Building digital experiences with passion and
                             precision
                         </div>
                     </FadeInRight>
-                    <FadeInRight>
+                    <FadeInRight delay={0.8}>
                         <div className="flex justify-center md:justify-start">
                             <Button href="/resume/RESUME-ROY.pdf" download>
                                 DOWNLOAD RESUME
