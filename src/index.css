@@ -155,7 +155,7 @@ html {
 
 .experience-inner,
 .contact-inner {
-    background: linear-gradient(225deg, #ffffff, #d6d9dd);
+    background: var(--color-primary-background);
     box-shadow: -4px 4px 8px #cacdd0,
         4px -4px 8px #ffffff;
 }
