@@ -160,6 +160,13 @@ html {
         4px -4px 8px #ffffff;
 }
 
+.project-preview-images {
+    background: #FFFFFF;
+    box-shadow: 5px 5px 5px #adadad,
+        -5px -5px 5px #ffffff;
+    ;
+}
+
 .learn-more-button-container-dark {
     background-image: linear-gradient(32deg, #6f90ee, #E3E9EA);
     width: fit-content;
@@ -209,7 +216,7 @@ html {
     box-shadow: 2px 2px 3px #d4d7d7,
         -2px -2px 3px #ffffff;
     left: 50%;
-    top:50%;
+    top: 50%;
     z-index: -1;
     height: 100%;
     transform: translate(-50%, -50%);
@@ -234,4 +241,20 @@ html {
     top: 50%;
     transform: translateY(-50%);
     z-index: -1;
+}
+
+/* CUSTOM STYLE FOR CAROUSEL*/
+.react-multiple-carousel__arrow::before {
+    font-size: 10px!important;
+}
+
+.react-multiple-carousel__arrow {
+    min-width: 23px!important;
+    min-height: 23px!important;
+}
+.react-multiple-carousel__arrow--left {
+    left: calc(1% + 1px)!important;
+}
+.react-multiple-carousel__arrow--right {
+    right: calc(1% + 1px)!important;
 }

@@ -1,0 +1,20 @@
+import "./modal.css";
+
+export default function Modal({ isOpen, onClose, children }) {
+  if (!isOpen) return null;
+
+  return (
+    <div className="modal-backdrop" onClick={onClose}>
+      <div
+        className="modal-container p-2 md:p-4"
+        onClick={(e) => e.stopPropagation()}
+      >
+        <button className="modal-close text-white text-5xl" onClick={onClose}>
+          ×
+        </button>
+
+        {children}
+      </div>
+    </div>
+  );
+}

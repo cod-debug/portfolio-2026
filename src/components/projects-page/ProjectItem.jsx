@@ -1,7 +1,13 @@
 import { FadeInUp } from "../animations/Animations";
 import Button from "../Button";
 
-function ProjectItem({ project, animationDelay = 0.2 }) {
+function ProjectItem({ project, animationDelay = 0.2, openPreviewImagesModal = null }) {
+    const handleOpenPreviewImagesModal = () => {
+        if (openPreviewImagesModal) {
+            openPreviewImagesModal(project);
+        }
+    }
+
     return (
         <FadeInUp delay={animationDelay}>
             <div
@@ -36,6 +42,19 @@ function ProjectItem({ project, animationDelay = 0.2 }) {
                             href={project?.link}
                         >
                             Visit Site
+                        </Button>
+                    </div>
+                )}
+                {project?.previewImages && project?.previewImages.length > 0 && (
+                    <div className="flex justify-end">
+                        <Button
+                            className="rounded-4xl"
+                            btnType="light-lighter"
+                            target="_blank"
+                            onClick={() => handleOpenPreviewImagesModal(project)}
+
+                        >
+                            View Screenshots
                         </Button>
                     </div>
                 )}
