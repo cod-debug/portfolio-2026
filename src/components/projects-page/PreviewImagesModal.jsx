@@ -1,7 +1,6 @@
 import Modal from "../modal/Modal";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import { FadeInLeft } from "../animations/Animations";
 
 function PreviewImagesModal({
     project,
