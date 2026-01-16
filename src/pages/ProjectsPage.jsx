@@ -3,8 +3,7 @@ import ProjectItem from "../components/projects-page/ProjectItem";
 import Separator from "../components/Separator";
 import { FadeInLeft, FadeInRight } from "../components/animations/Animations";
 import Container from "../components/Container";
-import sample_projects from "./data/projects/sample-projects";
-import Modal from "../components/modal/Modal";
+import sample_projects from "../data/projects/sample-projects";
 import PreviewImagesModal from "../components/projects-page/PreviewImagesModal";
 
 function ProjectsPage() {

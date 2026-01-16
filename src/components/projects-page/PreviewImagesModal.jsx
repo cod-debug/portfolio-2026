@@ -51,6 +51,7 @@ function PreviewImagesModal({
                 <h2 className="md:text-2xl my-4 text-primary-text font-bold">
                     {project?.title}
                 </h2>
+                <p className="text-accent-dark-blue">{project?.description}</p>
             </div>
         </Modal>
     );
