@@ -53,7 +53,6 @@ const timelineData = [
 
 function ExperiencePage() {
     useEffect(() => {
-        // Temporarily disable smooth scroll behavior
         window.scrollTo(0, 0);
     }, []);
     return (
@@ -104,11 +103,11 @@ function ExperiencePage() {
                     return (
                         <div key={index}>
                             {index % 2 === 1 ? (
-                                <FadeInRight delay={((index % 2) + 1) * 0.4}>
+                                <FadeInRight>
                                     <TimelineItemLeft timelineItem={timelineItem} />
                                 </FadeInRight>
                             ) : (
-                                <FadeInLeft delay={((index % 2) + 1) * 0.4}>
+                                <FadeInLeft>
                                     <TimelineItemRight
                                         timelineItem={timelineItem}
                                     />
