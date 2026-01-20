@@ -16,6 +16,7 @@ import adminPoViewImg from '../../assets/projects/pos/admin-po-view.PNG';
 export const pos_project = {
         title: "Integrated Warehouse Management and Retail Management (IWRM)",
         imgSrc: cashierImg,
+        description: "A comprehensive cloud-based inventory and POS system designed for ESJ Glass Aluminum Supply, integrating warehouse management and retail operations for streamlined business processes.",
         previewImages: [
             cashierImg,
             cashierPaymentImg,
@@ -32,7 +33,6 @@ export const pos_project = {
             adminPoAddImg,
             adminPoViewImg,
         ],
-        description: "A comprehensive cloud-based inventory and POS system designed for ESJ Glass Aluminum Supply, integrating warehouse management and retail operations for streamlined business processes.",
 };
 
 export default pos_project;

@@ -32,6 +32,7 @@ import screenerApplication9Img from "../../assets/projects/asc/screener-applicat
 const asc_project = {
     title: "Ad Standard Council (ASC) Application Management System",
     imgSrc: superadminAnnouncementsImg,
+    description: "A web-based application management system for the Ad Standard Council (ASC) that streamlines the application, evaluation, screening, and reviewing processes for advertising standards compliance.",
     previewImages: [
         superadminAnnouncementsImg,
         applicantAnnouncementImg,
@@ -64,7 +65,6 @@ const asc_project = {
         screenerApplication8Img,
         screenerApplication9Img,
     ],
-    description: "A web-based application management system for the Ad Standard Council (ASC) that streamlines the application, evaluation, screening, and reviewing processes for advertising standards compliance.",
 }
 
 export default asc_project;

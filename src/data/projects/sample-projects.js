@@ -7,6 +7,7 @@ import jkWeddingImg from "../../assets/projects/jkwedding.PNG";
 import digicashImg from "../../assets/projects/digicash.PNG";
 import posData from "./pos";
 import ascData from "./asc";
+import alumniData from "./alumni";
 
 const sample_projects = [
     {
@@ -57,6 +58,7 @@ const sample_projects = [
     },
     posData,
     ascData,
+    alumniData,
 ];
 
 export default sample_projects;
