@@ -8,6 +8,7 @@ import digicashImg from "../../assets/projects/digicash.PNG";
 import posData from "./pos";
 import ascData from "./asc";
 import alumniData from "./alumni";
+import ticketingData from "./ticketing";
 
 const sample_projects = [
     {
@@ -59,6 +60,7 @@ const sample_projects = [
     posData,
     ascData,
     alumniData,
+    ticketingData,
 ];
 
 export default sample_projects;
