@@ -3,7 +3,7 @@ import Separator from "../Separator";
 
 import emailIconImg from "../../assets/icons/email.png";
 import phoneIconImg from "../../assets/icons/phone.png";
-import mappinIconImg from "../../assets/icons/mappin.png";
+import linkedinIconImg from "../../assets/icons/linkedin.png";
 
 function Contact(){
     return(
@@ -30,8 +30,8 @@ function Contact(){
                                     <a href="tel:+639633205624">+639633205624</a>
                                 </div>
                                 <div className="flex items-center gap-4 px-4 ">
-                                    <img src={mappinIconImg} alt="Map Pin Icon" className="w-6 h-6" />
-                                    <div>Barangay Manalad, Ilog, Negros Occidental, Philippines 6109</div>
+                                    <img src={linkedinIconImg} alt="LinkedIn Icon" className="w-6 h-6" />
+                                    <a href="https://www.linkedin.com/in/roy-dueñas-015a39271" target="_blank" rel="noopener noreferrer">www.linkedin.com/in/roy-dueñas-015a39271</a>
                                 </div>
                             </div>
                         </div>

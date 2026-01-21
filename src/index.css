@@ -149,6 +149,12 @@ body {
         4px -4px 8px #ffffff;
 }
 
+.experience-section,
+.experience-inner {
+    border-bottom-right-radius: 50px;
+    corner-bottom-right-shape: bevel;
+}
+
 .experience-inner,
 .contact-inner {
     background: var(--color-primary-background);
