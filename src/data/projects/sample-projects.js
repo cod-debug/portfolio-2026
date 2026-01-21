@@ -9,6 +9,7 @@ import posData from "./pos";
 import ascData from "./asc";
 import alumniData from "./alumni";
 import paceData from "./pace";
+import ticketingData from "./ticketing";
 
 const sample_projects = [
     {
@@ -61,6 +62,7 @@ const sample_projects = [
     ascData,
     alumniData,
     paceData,
+    ticketingData,
 ];
 
 export default sample_projects;
