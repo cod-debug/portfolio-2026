@@ -69,10 +69,10 @@ const sample_projects = [
     },
     posData,
     ascData,
+    fileTracingData,
     alumniData,
     paceData,
     ticketingData,
-    fileTracingData,
 ];
 
 export default sample_projects;
