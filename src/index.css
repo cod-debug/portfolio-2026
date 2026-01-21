@@ -45,10 +45,6 @@ body {
     background-color: var(--color-primary-background);
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 .scroll-progress-bar {
     position: fixed;
     top: 0;
