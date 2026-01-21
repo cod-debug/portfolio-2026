@@ -16,14 +16,12 @@ function Header() {
             <Container>
                 <header className="px-4 sm:px-8">
                     <div className="flex justify-between items-center">
-                        {/* Logo */}
                         <div className="text-primary-text">
                             <div className="text-xl sm:text-2xl font-bold md:pl-5">
                                 ROY DUEÑAS
                             </div>
                         </div>
 
-                        {/* Desktop Navigation */}
                         <nav className="hidden md:flex">
                             <ul className="flex gap-6 md:gap-16 text-steal-blue font-medium">
                                 <li><HashLink smooth scroll={scrollWithOffset} to="/#home">ME</HashLink></li>
@@ -34,13 +32,11 @@ function Header() {
                             </ul>
                         </nav>
 
-                        {/* Mobile Hamburger */}
                         <div className="md:hidden flex items-center">
                             <button
                                 className="text-primary-accent focus:outline-none"
                                 onClick={() => setIsOpen(!isOpen)}
                             >
-                                {/* Hamburger icon */}
                                 <svg
                                     className="w-6 h-6"
                                     fill="none"
@@ -59,7 +55,6 @@ function Header() {
                         </div>
                     </div>
 
-                    {/* Mobile Menu */}
                     {isOpen && (
                         <div className="md:hidden">
                             <ul className="flex flex-col gap-2 text-steal-blue font-medium absolute bg-primary-background w-full left-0 rounded-lg py-4 px-8">
@@ -72,10 +67,9 @@ function Header() {
                         </div>
                     )}
 
-                    {/* Subtitle / Divider */}
                     <div className="items-center gap-2 mt-2 hidden md:flex">
                         <div className="w-10 h-px bg-muted-labels opacity-20"></div>
-                        <div className="text-primary-accent text-xs">WEB DEVELOPER</div>
+                        <div className="text-primary-accent text-xs">SOFTWARE DEVELOPER</div>
                         <div className="grow h-px bg-muted-labels opacity-20"></div>
                     </div>
                 </header>

@@ -7,6 +7,8 @@ import htmlLogoImg from "../../assets/skills/html.webp";
 import cssLogoImg from "../../assets/skills/css.png";
 import javascriptLogoImg from "../../assets/skills/js.avif";
 import reactLogoImg from "../../assets/skills/react.svg";
+import reactNativeLogoImg from "../../assets/skills/react-native.jpg";
+import flutterLogoImg from "../../assets/skills/flutter.png";
 import vueJsLogoImg from "../../assets/skills/vuejs.png";
 import phpLogoImg from "../../assets/skills/php.png";
 import laravelLogoImg from "../../assets/skills/laravel.webp";
@@ -59,6 +61,14 @@ const technicalSkillsProgrammingLanguages = [
         skillName: "React",
     },
     {
+        logo: reactNativeLogoImg,
+        skillName: "React Native",
+    },
+    {
+        logo: flutterLogoImg,
+        skillName: "Flutter",
+    },
+    {
         logo: vueJsLogoImg,
         skillName: "Vue.js",
     },
@@ -66,6 +76,8 @@ const technicalSkillsProgrammingLanguages = [
         logo: pythonLogoImg,
         skillName: "Python",
     },
+    
+
 ];
 
 const technicalSkillsDatabases = [

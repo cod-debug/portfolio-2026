@@ -50,7 +50,7 @@ function ProjectsPage() {
             </div>
             <Separator className="my-8" />
             <p className="text-muted-labels mb-8">
-                More web application projects will be posted soon...
+                More web/mobile application projects will be posted soon...
             </p>
             <PreviewImagesModal
                 project={selectedProject}
