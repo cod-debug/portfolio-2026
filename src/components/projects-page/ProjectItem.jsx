@@ -24,7 +24,7 @@ function ProjectItem({ project, animationDelay = 0.2, openPreviewImagesModal = n
                 <div className="font-medium tracking-wide text-accent-dark-blue text-lg">
                     {project?.title}
                 </div>
-                <div className="grow text-secondary-text">
+                <div className="grow text-secondary-text line-clamp-5">
                     {project?.description && (
                         <p
                             dangerouslySetInnerHTML={{
@@ -50,7 +50,6 @@ function ProjectItem({ project, animationDelay = 0.2, openPreviewImagesModal = n
                         <Button
                             className="rounded-4xl"
                             btnType="light-lighter"
-                            target="_blank"
                             onClick={() => handleOpenPreviewImagesModal(project)}
 
                         >

@@ -8,7 +8,7 @@ import updateTicketPricingImg from "../../assets/projects/ticketing/update-ticke
 
 
 const ticketing_project = {
-    title: "BREAKTHROUGH TICKETING System",
+    title: "BREAKTHROUGH Ticketing System",
     imgSrc: homeImg,
     description: "A simple web-based ticketing system for purchasing event tickets online, featuring user-friendly ticket selection, secure payment processing, and an admin dashboard for managing ticket inventory and pricing.",
     previewImages: [

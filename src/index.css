@@ -10,7 +10,7 @@
     --color-primary-text: #484f5f;
     --color-secondary-text: #6B7280;
     --color-primary-accent: #607696;
-    --color-secondary-accent: #E6A700;
+    --color-secondary-accent: #CB9C20;
     --color-muted-labels: #9AA1AF;
 
     /* Accents */
@@ -43,10 +43,6 @@
 
 body {
     background-color: var(--color-primary-background);
-}
-
-html {
-    scroll-behavior: smooth;
 }
 
 .scroll-progress-bar {
@@ -151,6 +147,12 @@ html {
     background: var(--color-primary-background);
     box-shadow: -4px 4px 8px #cacdd0,
         4px -4px 8px #ffffff;
+}
+
+.experience-section,
+.experience-inner {
+    border-bottom-right-radius: 50px;
+    corner-bottom-right-shape: bevel;
 }
 
 .experience-inner,

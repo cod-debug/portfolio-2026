@@ -26,9 +26,9 @@ import employerJobPostingAdd2Img from "../../assets/projects/alumni/employer-job
 import employerJobPostingListImg from "../../assets/projects/alumni/employer-job-posting-list.png";
 
 const alumni_project = {
-    title: "SUNN CONNECTS Alumni Portal",
+    title: "SUNN CONNECTS Alumni Portal with Employer Engagement",
     imgSrc: adminDashboardImg,
-    description: "A web-based alumni portal for SUNN CONNECTS that facilitates networking, resource sharing among alumni members, with employer engagement features, and reports/analytics with AI integration.",
+    description: "A web-based alumni portal for SUNN CONNECTS that facilitates networking, resource sharing among alumni members, with employer engagement features, and reports/analytics with AI integration. Built with <strong>Vue.js</strong>, <strong>Laravel</strong>, <strong>Vite</strong>, <strong>microservice architecture</strong>, <strong>WebSocket</strong> for real-time communication, and <strong>AI integration</strong> for analytics.",
     previewImages: [
         adminDashboardImg,
         adminJobPostingImg,

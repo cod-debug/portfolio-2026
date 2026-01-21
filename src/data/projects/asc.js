@@ -30,9 +30,9 @@ import screenerApplication8Img from "../../assets/projects/asc/screener-applicat
 import screenerApplication9Img from "../../assets/projects/asc/screener-application-9.PNG";
 
 const asc_project = {
-    title: "Ad Standard Council (ASC) Application Management System",
+    title: "Ad Standards Council (ASC) Application Management System",
     imgSrc: superadminAnnouncementsImg,
-    description: "A web-based application management system for the Ad Standard Council (ASC) that streamlines the application, evaluation, screening, and reviewing processes for advertising standards compliance.",
+    description: "A web-based application management system for the Ad Standards Council (ASC) that streamlines the application, evaluation, screening, and reviewing processes for advertising standards compliance. Built with <strong>Vue.js (Quasar Framework)</strong>, featuring <strong>API integration</strong>, <strong>Server-Sent Events (SSE)</strong> for real-time updates, <strong>WebSocket communication</strong>, and <strong>third-party feature flagging</strong> for controlled feature rollouts.",
     previewImages: [
         superadminAnnouncementsImg,
         applicantAnnouncementImg,

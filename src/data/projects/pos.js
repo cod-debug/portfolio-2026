@@ -14,25 +14,27 @@ import adminPoAddImg from '../../assets/projects/pos/admin-po-add.PNG';
 import adminPoViewImg from '../../assets/projects/pos/admin-po-view.PNG';
 
 export const pos_project = {
-        title: "Integrated Warehouse Management and Retail Management (IWRM)",
-        imgSrc: cashierImg,
-        description: "A comprehensive cloud-based inventory and POS system designed for ESJ Glass Aluminum Supply, integrating warehouse management and retail operations for streamlined business processes.",
-        previewImages: [
-            cashierImg,
-            cashierPaymentImg,
-            warehouseManagerImg,
-            warehouseManager2Img,
-            warehouseManager3Img,
-            warehouseManager4Img,
-            warehouseManager5Img,
-            adminDashboardImg,
-            dashboardIndividualReportImg,
-            adminLowStocksImg,
-            adminReportImg,
-            adminPoImg,
-            adminPoAddImg,
-            adminPoViewImg,
-        ],
+    title: "Integrated Warehouse Management and Retail Management (IWRM)",
+    imgSrc: cashierImg,
+    description: "A comprehensive cloud-based inventory and POS system designed for ESJ Glass Aluminum Supply, " +
+        "integrating warehouse management and retail operations for streamlined business processes. " +
+        "Built with <strong>Vue.js</strong>, <strong>Laravel</strong>, <strong>MySQL</strong>, and <strong>Webpack</strong> in a <strong>monolithic architecture</strong>.",
+    previewImages: [
+        cashierImg,
+        cashierPaymentImg,
+        warehouseManagerImg,
+        warehouseManager2Img,
+        warehouseManager3Img,
+        warehouseManager4Img,
+        warehouseManager5Img,
+        adminDashboardImg,
+        dashboardIndividualReportImg,
+        adminLowStocksImg,
+        adminReportImg,
+        adminPoImg,
+        adminPoAddImg,
+        adminPoViewImg,
+    ],
 };
 
 export default pos_project;

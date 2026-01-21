@@ -42,7 +42,7 @@ function ProjectsPage() {
                 {sample_projects.map((project, index) => (
                     <ProjectItem
                         project={project}
-                        animationDelay={((index % (isLessThanMd ? 1 : 6)) + 1) * 0.2}
+                        animationDelay={((index % (isLessThanMd ? 1 : 3)) + 1) * 0.2}
                         key={project.title}
                         openPreviewImagesModal={openPreviewImagesModal}
                     />
