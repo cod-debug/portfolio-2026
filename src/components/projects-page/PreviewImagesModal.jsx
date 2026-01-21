@@ -30,7 +30,7 @@ function PreviewImagesModal({
             onClose={() => setIsOpenPreviewImagesModal(false)}
             isOpen={isOpenPreviewImagesModal}
         >
-            <div className="rounded-lg project-preview-images p-4">
+            <div className="rounded-lg p-4 overflow-hidden">
                 {project?.previewImages && project?.previewImages.length > 0 ? (
                     <Carousel
                         responsive={responsive}
@@ -39,8 +39,8 @@ function PreviewImagesModal({
                     >
                         {project?.previewImages.map((i, k) => {
                             return (
-                                <div className="item" key={k}>
-                                    <img src={i} alt={`Preview ${k + 1}`} className="rounded-t-lg" />
+                                <div className="item overflow-hidden rounded-lg" key={k}>
+                                    <img src={i} alt={`Preview ${k + 1}`} />
                                 </div>
                             );
                         })}
@@ -51,7 +51,7 @@ function PreviewImagesModal({
                 <h2 className="md:text-2xl my-4 text-primary-text font-bold">
                     {project?.title}
                 </h2>
-                <p className="text-accent-dark-blue">{project?.description}</p>
+                <p className="text-accent-dark-blue" dangerouslySetInnerHTML={{ __html: project?.description }}></p>
             </div>
         </Modal>
     );

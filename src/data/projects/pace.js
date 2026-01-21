@@ -16,7 +16,7 @@ import userAgencyFeesImg from "../../assets/projects/pace/user-agency-fees.PNG";
 const asc_project = {
     title: "Progressive Alliance of Capitol Employees",
     imgSrc: adminDashboardImg,
-    description: "This web application is designed to securely record and manage employee contributions to the Progressive Alliance of Capitol Employees. It provides a centralized system for tracking contribution history, ensuring accuracy, transparency, and easy access to records.",
+    description: "This web application is designed to securely record and manage employee contributions to the Progressive Alliance of Capitol Employees. It provides a centralized system for tracking contribution history, ensuring accuracy, transparency, and easy access to records. The platform streamlines data management, reduces manual errors, and supports efficient reporting for administrative and auditing purposes. Built with <strong>Vue.js</strong>, <strong>Laravel</strong>, <strong>MySQL</strong>, and <strong>Webpack</strong> in a <strong>monolithic architecture</strong>.",
     previewImages: [
         adminDepartmentsImg,
         adminUsersImg,

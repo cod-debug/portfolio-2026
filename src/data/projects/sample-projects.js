@@ -5,11 +5,13 @@ import everglowImg from "../../assets/projects/everglow.PNG";
 import optekPayImg from "../../assets/projects/optekpay.PNG";
 import jkWeddingImg from "../../assets/projects/jkwedding.PNG";
 import digicashImg from "../../assets/projects/digicash.PNG";
+import pickleballScoreboardImg from "../../assets/projects/pickleball-scoreboard.PNG";
 import posData from "./pos";
 import ascData from "./asc";
 import alumniData from "./alumni";
 import paceData from "./pace";
 import ticketingData from "./ticketing";
+import fileTracingData from './file-tracking';
 
 const sample_projects = [
     {
@@ -58,11 +60,19 @@ const sample_projects = [
         description:
             "A digital wallet service website built with <strong>Next.js</strong>, showcasing features, security measures, and user benefits through a modern and user-friendly interface.",
     },
+    {
+        
+        title: "Pickleball Scoreboard",
+        imgSrc: pickleballScoreboardImg,
+        link: "https://gldrp.com/pickleball",
+        description: "A web-based pickleball scoreboard application built with <strong>React.js</strong>, designed for easy score tracking and game management during pickleball matches.",
+    },
     posData,
     ascData,
     alumniData,
     paceData,
     ticketingData,
+    fileTracingData,
 ];
 
 export default sample_projects;
