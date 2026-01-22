@@ -24,7 +24,7 @@ function ProjectItem({ project, animationDelay = 0.2, openPreviewImagesModal = n
                 <div className="font-medium tracking-wide text-accent-dark-blue text-lg">
                     {project?.title}
                 </div>
-                <div className="grow text-secondary-text line-clamp-5">
+                <div className="text-secondary-text line-clamp-5">
                     {project?.description && (
                         <p
                             dangerouslySetInnerHTML={{
@@ -33,6 +33,7 @@ function ProjectItem({ project, animationDelay = 0.2, openPreviewImagesModal = n
                         ></p>
                     )}
                 </div>
+                <div className="grow"></div>
                 {project?.link && (
                     <div className="flex justify-end">
                         <Button
