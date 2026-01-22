@@ -12,6 +12,7 @@ import alumniData from "./alumni";
 import paceData from "./pace";
 import ticketingData from "./ticketing";
 import fileTracingData from './file-tracking';
+import sparkData from './spark-ai';
 
 const sample_projects = [
     {
@@ -71,6 +72,7 @@ const sample_projects = [
     ascData,
     fileTracingData,
     alumniData,
+    sparkData,
     paceData,
     ticketingData,
 ];

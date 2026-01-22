@@ -61,6 +61,10 @@ const technicalSkillsProgrammingLanguages = [
         skillName: "React",
     },
     {
+        logo: vueJsLogoImg,
+        skillName: "Vue.js",
+    },
+    {
         logo: reactNativeLogoImg,
         skillName: "React Native",
     },
@@ -69,15 +73,9 @@ const technicalSkillsProgrammingLanguages = [
         skillName: "Flutter",
     },
     {
-        logo: vueJsLogoImg,
-        skillName: "Vue.js",
-    },
-    {
         logo: pythonLogoImg,
         skillName: "Python",
     },
-    
-
 ];
 
 const technicalSkillsDatabases = [
