@@ -1,0 +1,38 @@
+[
+    {
+        "position": "Full-Stack Developer",
+        "company": "Ingenuiti, Dumaguete City, Philippines",
+        "duration": "June 2023 - Present",
+        "description": "Responsible for developing and maintaining websites/web applications. Technologies used: <strong>HTML, CSS, JavaScript, CodeIgniter, Laravel, VueJs, ReactJs, Flutter (Dart), Docker, Vagrant Box</strong>"
+    },
+    {
+        "position": "Software Engineer",
+        "company": "Telcom Live Content, Inc.",
+        "duration": "February 2021 - April 2023 (full-time)",
+        "description": "Responsible for leading a front-end team, developing and maintaining websites/web applications, and collaborating with Project Managers and System Analysts. Technologies used: <strong>Laravel, CodeIgniter, Nodejs (Express), Vuejs (NuxtJs and Quasar), ReactJs, React Native, Docker.</strong>"
+    },
+    {
+        "position": "Management Information System Personnel",
+        "company": "Southland College, Kabankalan City Inc.",
+        "duration": "August 2020 - February 2021 (full-time)",
+        "description": "Responsible for creating the school's website and digital logbook with RFID for both students and employees. Technologies used: <strong>PHP, HTML, CSS, JavaScript, JQuery, and Filezilla for FTP.</strong>"
+    },
+    {
+        "position": "Web Developer",
+        "company": "323Col Solutions",
+        "duration": "June 2020 - August 2020 (part-time)",
+        "description": "Created their own website. <strong>Technology used: HTML, CSS, JavaScript, PHP</strong>"
+    },
+    {
+        "position": "Web Developer",
+        "company": "Coders Tribe",
+        "duration": "June 2020 - August 2020 (part-time)",
+        "description": "Created an election voting app for doctors. Technology used: <strong>HTML, CSS, JavaScript, Django (Python)</strong>"
+    },
+    {
+        "position": "Web Developer (Trainee)",
+        "company": "Servio Tech",
+        "duration": "January 2020 - June 2020 (part-time)",
+        "description": "Responsible for creating reports using <strong>crystal report</strong> and <strong>SQL</strong>, manage <strong>WIX website</strong>. Technologies used: <strong>EBT accounting app, SQL, WIX corvid, Crystal report</strong>."
+    }
+]
