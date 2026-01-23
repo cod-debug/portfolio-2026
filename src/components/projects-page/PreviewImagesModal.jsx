@@ -56,8 +56,8 @@ function PreviewImagesModal({
                     )}
                 </div>
                 <div className="col-span-1 px-4 pb-4">
-                    <div className="experience-section p-2 mt-4 md:mt-0">
-                        <div className="experience-inner p-4">
+                    <div className="contact-section p-2 mt-4 md:mt-0 rounded-lg">
+                        <div className="contact-inner p-6 rounded-lg">
                             <h2 className="md:text-2xl text-primary-text font-bold">
                                 {project?.title}
                             </h2>
