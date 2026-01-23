@@ -9,14 +9,11 @@
 }
 
 .modal-container {
-  background: #fff;
-  width: 90%;
-  max-width: 900px;
-  border-radius: 10px;
+  width: 95%;
   position: relative;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
   animation: modalFade 0.25s ease;
-  max-height: 90vh;
+  max-height: 95vh;
   overflow-y: auto;
 }
 

@@ -1,6 +1,7 @@
 import Modal from "../modal/Modal";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import Separator from "../Separator";
 
 function PreviewImagesModal({
     project,
@@ -30,28 +31,46 @@ function PreviewImagesModal({
             onClose={() => setIsOpenPreviewImagesModal(false)}
             isOpen={isOpenPreviewImagesModal}
         >
-            <div className="rounded-lg p-4 overflow-hidden">
-                {project?.previewImages && project?.previewImages.length > 0 ? (
-                    <Carousel
-                        responsive={responsive}
-                        infinite={true}
-                        className="skill-slider"
-                    >
-                        {project?.previewImages.map((i, k) => {
-                            return (
-                                <div className="item overflow-hidden rounded-lg" key={k}>
-                                    <img src={i} alt={`Preview ${k + 1}`} />
-                                </div>
-                            );
-                        })}
-                    </Carousel>
-                ) : (
-                    <p>No preview images available.</p>
-                )}
-                <h2 className="md:text-2xl my-4 text-primary-text font-bold">
-                    {project?.title}
-                </h2>
-                <p className="text-accent-dark-blue" dangerouslySetInnerHTML={{ __html: project?.description }}></p>
+            <div className="grid grid-cols-1 md:grid-cols-4 bg-primary-background">
+                <div className="col-span-1 md:col-span-3">
+                    {project?.previewImages &&
+                    project?.previewImages.length > 0 ? (
+                        <Carousel
+                            responsive={responsive}
+                            infinite={true}
+                            className="skill-slider"
+                        >
+                            {project?.previewImages.map((i, k) => {
+                                return (
+                                    <div
+                                        className="item overflow-hidden rounded-lg"
+                                        key={k}
+                                    >
+                                        <img src={i} alt={`Preview ${k + 1}`} />
+                                    </div>
+                                );
+                            })}
+                        </Carousel>
+                    ) : (
+                        <p>No preview images available.</p>
+                    )}
+                </div>
+                <div className="col-span-1 px-4 pb-4">
+                    <div className="experience-section p-2 mt-4 md:mt-0">
+                        <div className="experience-inner p-4">
+                            <h2 className="md:text-2xl text-primary-text font-bold">
+                                {project?.title}
+                            </h2>
+                            <Separator className="my-2" />
+                            <p
+                                className="text-accent-dark-blue text-sm md:text-lg"
+                                dangerouslySetInnerHTML={{
+                                    __html: project?.description,
+                                }}
+                            ></p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </Modal>
     );

@@ -6,10 +6,10 @@ export default function Modal({ isOpen, onClose, children }) {
   return (
     <div className="modal-backdrop" onClick={onClose}>
       <div
-        className="modal-container p-2 md:p-4"
+        className="modal-container p-2 md:p-4 rounded-lg bg-primary-background"
         onClick={(e) => e.stopPropagation()}
       >
-        <button className="modal-close text-white text-5xl" onClick={onClose}>
+        <button className="modal-close text-primary text-5xl" onClick={onClose}>
           ×
         </button>
 
