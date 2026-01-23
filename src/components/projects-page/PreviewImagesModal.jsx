@@ -31,7 +31,7 @@ function PreviewImagesModal({
             onClose={() => setIsOpenPreviewImagesModal(false)}
             isOpen={isOpenPreviewImagesModal}
         >
-            <div className="grid grid-cols-1 md:grid-cols-4 bg-primary-background">
+            <div className="grid grid-cols-1 md:grid-cols-4 bg-primary-background gap-4 md:gap-8">
                 <div className="col-span-1 md:col-span-3">
                     {project?.previewImages &&
                     project?.previewImages.length > 0 ? (
@@ -55,9 +55,9 @@ function PreviewImagesModal({
                         <p>No preview images available.</p>
                     )}
                 </div>
-                <div className="col-span-1 px-4 pb-4">
-                    <div className="p-2 mt-4 md:mt-0 rounded-lg">
-                        <div className="p-6 rounded-lg">
+                <div className="col-span-1 pr-4 md:pt-4">
+                    <div className="md:mt-0 rounded-lg">
+                        <div className="rounded-lg">
                             <h2 className="md:text-2xl text-primary-text font-bold">
                                 {project?.title}
                             </h2>
