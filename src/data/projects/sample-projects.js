@@ -14,6 +14,7 @@ import ticketingData from "./ticketing";
 import fileTracingData from './file-tracking';
 import sparkData from './spark-ai';
 import pokemonData from './pokemon';
+import medrecData from './medrec';
 
 const sample_projects = [
     {
@@ -71,6 +72,7 @@ const sample_projects = [
     },
     posData,
     ascData,
+    medrecData,
     fileTracingData,
     alumniData,
     sparkData,
