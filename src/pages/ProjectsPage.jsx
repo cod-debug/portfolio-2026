@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import ProjectItem from "../components/projects-page/ProjectItem";
 import Separator from "../components/Separator";
-import { FadeInLeft, FadeInRight } from "../components/animations/Animations";
+import { FadeInLeft, FadeInRight, FadeInUp } from "../components/animations/Animations";
 import Container from "../components/Container";
 import sample_projects from "../data/projects/sample-projects";
 import PreviewImagesModal from "../components/projects-page/PreviewImagesModal";
@@ -60,16 +60,18 @@ function ProjectsPage() {
                 </FadeInLeft>
             </div>
             
-            <div className="project-card rounded-lg">
-                <Carousel responsive={carousel_responsive}
-                    infinite={true}
-                    className="skill-slider"
-                >
-                    {sample_projects.map((project, index) => (
-                        <ProjectCarouselItem project={project} key={`${project.title}-${index}`}  openPreviewImagesModal={openPreviewImagesModal} />
-                    ))}
-                </Carousel>
-            </div>
+            <FadeInUp>
+                <div className="project-card rounded-lg">
+                    <Carousel responsive={carousel_responsive}
+                        infinite={true}
+                        className="skill-slider"
+                    >
+                        {sample_projects.map((project, index) => (
+                            <ProjectCarouselItem project={project} key={`${project.title}-${index}`}  openPreviewImagesModal={openPreviewImagesModal} />
+                        ))}
+                    </Carousel>
+                </div>
+            </FadeInUp>
 
             <div className="grid grid-cols-1 md:grid-cols-3 my-8 text-primary-text gap-8">
                 {sample_projects.map((project, index) => (
