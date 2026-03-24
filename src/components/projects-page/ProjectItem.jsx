@@ -42,7 +42,7 @@ function ProjectItem({ project, animationDelay = 0.2, openPreviewImagesModal = n
                             target="_blank"
                             href={project?.link}
                         >
-                            Visit Site
+                            View Project
                         </Button>
                     </div>
                 )}

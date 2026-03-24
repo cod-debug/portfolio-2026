@@ -5,6 +5,8 @@ import { FadeInLeft, FadeInRight } from "../components/animations/Animations";
 import Container from "../components/Container";
 import sample_projects from "../data/projects/sample-projects";
 import PreviewImagesModal from "../components/projects-page/PreviewImagesModal";
+import Carousel from "react-multi-carousel";
+import ProjectCarouselItem from "../components/projects-page/ProjectCarouselItem";
 
 function ProjectsPage() {
     const screenSize = window.innerWidth;
@@ -21,6 +23,26 @@ function ProjectsPage() {
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
+
+    const carousel_responsive = {
+        superLargeDesktop: {
+            breakpoint: { max: 4000, min: 3000 },
+            items: 1,
+        },
+        desktop: {
+            breakpoint: { max: 3000, min: 1024 },
+            items: 1,
+        },
+        tablet: {
+            breakpoint: { max: 1024, min: 464 },
+            items: 1,
+        },
+        mobile: {
+            breakpoint: { max: 464, min: 0 },
+            items: 1,
+        },
+    };
+
     return (
         <Container>
             <div className="text-center p-4 gap-4 flex flex-col">
@@ -37,8 +59,19 @@ function ProjectsPage() {
                     </p>
                 </FadeInLeft>
             </div>
+            
+            <div className="project-card rounded-lg">
+                <Carousel responsive={carousel_responsive}
+                    infinite={true}
+                    className="skill-slider"
+                >
+                    {sample_projects.map((project, index) => (
+                        <ProjectCarouselItem project={project} key={`${project.title}-${index}`}  openPreviewImagesModal={openPreviewImagesModal} />
+                    ))}
+                </Carousel>
+            </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 my-10 text-primary-text gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-3 my-8 text-primary-text gap-8">
                 {sample_projects.map((project, index) => (
                     <ProjectItem
                         project={project}
