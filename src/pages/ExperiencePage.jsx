@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { Helmet } from "react-helmet";
 import Container from "../components/Container";
 import TimelineItemEnd from "../components/experience/TimelineItemEnd";
 import TimelineItemLeft from "../components/experience/TimelineItemLeft";
@@ -7,12 +8,95 @@ import TimelineItemStart from "../components/experience/TimelineItemStart";
 import { FadeIn, FadeInLeft, FadeInRight } from "../components/animations/Animations";
 import timelineData from "../data/experience/timeline-data.json";
 
-function ExperiencePage() {
+export default function ExperiencePage() {
+    const pageUrl = "https://yourportfolio.com/#/experience";
+    const pageTitle = "Experience - Roy Dueñas | Full Stack Developer Career Journey";
+    const pageDescription = "Explore Roy Dueñas's professional experience as a full stack developer. From migrating complex web applications to building AI platforms and mobile apps with Vue.js, React, and Flutter.";
+    const keywords = "work experience, professional experience, full stack developer, Vue.js migration, React developer, Flutter mobile apps, web development career, AI platform development, Roy Dueñas experience, web application development, freelance projects, software engineering experience, custom software solutions, gldrp experience";
+    
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
+    
     return (
         <Container>
+            <Helmet>
+                {/* Primary Meta Tags */}
+                <title>{pageTitle}</title>
+                <meta name="title" content={pageTitle} />
+                <meta name="description" content={pageDescription} />
+                <meta name="keywords" content={keywords} />
+                <link rel="canonical" href={pageUrl} />
+                
+                {/* Open Graph / Facebook */}
+                <meta property="og:type" content="profile" />
+                <meta property="og:url" content={pageUrl} />
+                <meta property="og:title" content={pageTitle} />
+                <meta property="og:description" content={pageDescription} />
+                <meta property="og:image" content="https://gldrp.com/og-image-experience.jpg" />
+                <meta property="og:site_name" content="gldrp.com - Roy Duenas" />
+                <meta name="author" content="Roy Duenas" />
+                <meta name="robots" content="index, follow" />
+                
+                {/* Twitter */}
+                <meta property="twitter:card" content="summary_large_image" />
+                <meta property="twitter:url" content={pageUrl} />
+                <meta property="twitter:title" content={pageTitle} />
+                <meta property="twitter:description" content={pageDescription} />
+                <meta property="twitter:image" content="https://gldrp.com/og-image-experience.jpg" />
+                
+                {/* Structured Data - JSON-LD */}
+                <script type="application/ld+json">
+                    {JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "ProfilePage",
+                        "name": "Roy Duenas Professional Experience - gldrp.com",
+                        "description": pageDescription,
+                        "url": pageUrl,
+                        "mainEntity": {
+                            "@type": "Person",
+                            "name": "Roy Duenas",
+                            "alternateName": "Roy Dueñas",
+                            "jobTitle": "Full Stack Web Developer",
+                            "brand": {
+                                "@type": "Brand",
+                                "name": "gldrp",
+                                "url": "https://gldrp.com"
+                            },
+                            "hasOccupation": {
+                                "@type": "Occupation",
+                                "name": "Full Stack Developer at gldrp",
+                                "skills": [
+                                    "Vue.js",
+                                    "React",
+                                    "Flutter",
+                                    "JavaScript",
+                                    "TypeScript",
+                                    "Web Application Development",
+                                    "Mobile Application Development",
+                                    "AI Platform Development",
+                                    "gldrp projects"
+                                ]
+                            }
+                        },
+                        "breadcrumb": {
+                            "@type": "BreadcrumbList",
+                            "itemListElement": [{
+                                "@type": "ListItem",
+                                "position": 1,
+                                "name": "Home",
+                                "item": "https://gldrp.com"
+                            }, {
+                                "@type": "ListItem",
+                                "position": 2,
+                                "name": "Experience",
+                                "item": "https://gldrp.com/#/experience"
+                            }]
+                        }
+                    })}
+                </script>
+            </Helmet>
+            
             <div className="p-4 gap-4 flex flex-col text-center">
                 <FadeInRight delay={0.2}>
                     <h1 className="text-4xl font-bold mt-12 text-steal-blue">
@@ -40,7 +124,7 @@ function ExperiencePage() {
                         improving performance and long-term scalability. I also
                         developed a secure mobile notification app that allows
                         users to receive live updates from a web system using
-                        QR-code login—perfect for users who don’t have email
+                        QR-code login—perfect for users who don't have email
                         addresses or mobile numbers. In addition, I built a
                         complete point-of-sale system with inventory management
                         entirely on my own. As part of improving existing
@@ -77,5 +161,3 @@ function ExperiencePage() {
         </Container>
     );
 }
-
-export default ExperiencePage;
