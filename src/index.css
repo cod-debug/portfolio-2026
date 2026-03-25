@@ -260,3 +260,7 @@ body {
 .react-multiple-carousel__arrow--right {
     right: calc(1% + 1px)!important;
 }
+
+.project-card .react-multi-carousel-list .react-multiple-carousel__arrow {
+  z-index: 2;
+}
