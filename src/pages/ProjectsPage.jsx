@@ -131,18 +131,20 @@ export default function ProjectsPage() {
                 </FadeInLeft>
             </div>
             
-            <FadeInUp>
-                <div className="project-card rounded-lg">
-                    <Carousel responsive={carousel_responsive}
-                        infinite={true}
-                        className="skill-slider"
-                    >
-                        {sample_projects.map((project, index) => (
-                            <ProjectCarouselItem project={project} key={`${project.title}-${index}`}  openPreviewImagesModal={openPreviewImagesModal} />
-                        ))}
-                    </Carousel>
-                </div>
-            </FadeInUp>
+            <div className="hidden lg:block">
+                <FadeInUp>
+                    <div className="project-card rounded-lg">
+                        <Carousel responsive={carousel_responsive}
+                            infinite={true}
+                            className="skill-slider"
+                        >
+                            {sample_projects.map((project, index) => (
+                                <ProjectCarouselItem project={project} key={`${project.title}-${index}`}  openPreviewImagesModal={openPreviewImagesModal} />
+                            ))}
+                        </Carousel>
+                    </div>
+                </FadeInUp>
+            </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 my-8 text-primary-text gap-8">
                 {sample_projects.map((project, index) => (
