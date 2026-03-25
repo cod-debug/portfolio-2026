@@ -11,9 +11,9 @@ import ProjectCarouselItem from "../components/projects-page/ProjectCarouselItem
 
 export default function ProjectsPage() {
     const pageUrl = "https://gldrp.com/#/projects";
-    const pageTitle = "gldrp Projects - Roy Duenas Portfolio | Web & Mobile Applications";
+    const pageTitle = "Projects - Roy Duenas Portfolio | Web & Mobile Applications";
     const pageDescription = "Explore gldrp projects by Roy Duenas (Roy Dueñas) - innovative web and mobile applications built with React, Vue.js, Flutter, and cutting-edge technologies. View gldrp.com portfolio demos and case studies.";
-    const keywords = "gldrp projects, gldrp, gldrp.com, Roy Duenas, Roy Duenas Jr, Roy Jr Duenas, Roy Jr. Dueñas, Roy Duenas projects, Roy Dueñas projects, web projects, mobile apps, React projects, Vue.js applications, Flutter apps, portfolio projects, web development, software projects, gldrp portfolio, system developer, Dumaguete, Negros Oriental, Negros Occidental, Dumaguete Software Developer, Dumaguete System Developer, developer in dumaguete, developers in dumaguete";
+    const keywords = "Roy Duenas, Roy Duenas Jr, Roy Jr Duenas, Roy Jr. Dueñas, Roy Duenas projects, gldrp projects, gldrp, gldrp.com, Roy Dueñas projects, web projects, mobile apps, React projects, Vue.js applications, Flutter apps, portfolio projects, web development, software projects, gldrp portfolio, system developer, Dumaguete, Negros Oriental, Negros Occidental, Dumaguete Software Developer, Dumaguete System Developer, developer in dumaguete, developers in dumaguete";
     
     const screenSize = window.innerWidth;
     const mdSize = 768;
