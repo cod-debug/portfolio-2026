@@ -238,6 +238,6 @@ body {
     right: calc(1% + 1px)!important;
 }
 
-.project-card .react-multi-carousel-list .react-multiple-carousel__arrow {
-  z-index: 2;
+.react-multi-carousel-list .react-multiple-carousel__arrow {
+  z-index: 2!important;
 }
