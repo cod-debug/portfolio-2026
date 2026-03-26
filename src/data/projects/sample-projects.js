@@ -20,16 +20,16 @@ const sample_projects = [
     {
         title: "10Captcha Website",
         imgSrc: captchaImg,
-        link: "https://gldrp.com/10captcha/",
-        linkDisplay: "gldrp.com/10captcha/",
+        link: "https://10captcha.gldrp.com/",
+        linkDisplay: "10captcha.gldrp.com",
         description:
             "A web-based captcha solving platform built with <strong>React.js</strong>, focused on speed, usability, and a clean user interface for efficient task handling.",
     },
     {
         title: "Up Version Website",
         imgSrc: upversionImg,
-        link: "https://gldrp.com/upversion/#/",
-        linkDisplay: "gldrp.com/upversion/",
+        link: "https://upversion.gldrp.com/",
+        linkDisplay: "upversion.gldrp.com",
         description:
             "A modern website for a graphics design school built using <strong>React.js</strong>, showcasing programs, services, and creative works with a visually engaging layout.",
     },

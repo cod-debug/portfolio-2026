@@ -10,17 +10,17 @@ function Skills() {
         <Container className="my-12 text-primary-accent" id="skills">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <FadeInRight>
-                    <div className="skills-container p-0.5 rounded-lg h-fit border-t border-secondary-accent">
-                        <div className="skills-inner rounded-lg group">
+                    <div className="skills-container p-px rounded-lg h-fit bg-linear-to-br from-primary-background via-secondary-accent to-primary-background">
+                        <div className="rounded-lg group bg-primary-background">
                             <div className="translate-x-4 -translate-y-[.9rem] w-fit flex items-center  gap-2 bg-transparent">
                                 <div className="skills-bullet"></div>
-                                <div className="font-bold text-secondary-accent">
+                                <div className="font-bold text-light bg-primary-background px-2">
                                     TECHNICAL SKILLS
                                 </div>
                             </div>
 
                             <div className="skills-list pt-2 px-8 pb-8">
-                                <div className="text-sm text-muted-labels mb-2">
+                                <div className="text-sm text-light mb-2">
                                     Programming Langues / Frameworks
                                 </div>
                                 <Separator className="my-2" />
@@ -38,7 +38,7 @@ function Skills() {
                             </div>
 
                             <div className="skills-list pt-2 px-8 pb-8">
-                                <div className="text-sm text-muted-labels mb-2">
+                                <div className="text-sm text-light mb-2">
                                     Databases
                                 </div>
                                 <Separator className="my-2" />
@@ -57,17 +57,17 @@ function Skills() {
                 </FadeInRight>
 
                 <FadeInLeft>
-                    <div className="skills-container p-0.5 rounded-lg h-fit border-t border-secondary-accent">
-                        <div className="skills-inner rounded-lg group">
+                    <div className="skills-container p-px rounded-lg h-fit bg-linear-to-br from-primary-background via-secondary-accent to-primary-background">
+                        <div className="rounded-lg group bg-primary-background">
                             <div className="translate-x-4 -translate-y-[.9rem] w-fit flex items-center  gap-2 bg-transparent">
                                 <div className="skills-bullet"></div>
-                                <div className="font-bold text-secondary-accent">
+                                <div className="font-bold text-light">
                                     TOOLS
                                 </div>
                             </div>
 
                             <div className="skills-list pt-2 px-8 pb-8">
-                                <div className="text-sm text-muted-labels mb-2">
+                                <div className="text-sm text-light mb-2">
                                     DevOps, Servers & Infrastructure
                                 </div>
                                 <Separator className="my-2" />
@@ -83,7 +83,7 @@ function Skills() {
                             </div>
 
                             <div className="skills-list pt-2 px-8 pb-8">
-                                <div className="text-sm text-muted-labels mb-2">
+                                <div className="text-sm text-light mb-2">
                                     Tools & Development Environment
                                 </div>
                                 <Separator className="my-2" />
@@ -101,17 +101,17 @@ function Skills() {
                     </div>
                 </FadeInLeft>
                 <FadeInRight>
-                    <div className="skills-container p-0.5 rounded-lg h-fit border-t border-secondary-accent">
-                        <div className="skills-inner rounded-lg group">
+                    <div className="skills-container p-px rounded-lg h-fit bg-linear-to-br from-primary-background via-secondary-accent to-primary-background">
+                        <div className="rounded-lg group bg-primary-background">
                             <div className="translate-x-4 -translate-y-[.9rem] w-fit flex items-center  gap-2 bg-transparent">
                                 <div className="skills-bullet"></div>
-                                <div className="font-bold text-secondary-accent">
+                                <div className="font-bold text-light">
                                     SOFT SKILLS
                                 </div>
                             </div>
 
                             <div className="skills-list pt-2 px-8 pb-8">
-                                <div className="text-sm text-muted-labels mb-2">
+                                <div className="text-sm text-light mb-2">
                                     Essential interpersonal abilities
                                 </div>
                                 <Separator className="my-2" />

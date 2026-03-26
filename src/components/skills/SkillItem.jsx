@@ -1,12 +1,12 @@
 function SkillItem({ logo = null, skillName }) {
     return (
         <div className="flex items-center gap-4">
-            <div className="skill-icon p-0.25 w-fit rounded-full overflow-hidden">
+            <div className="skill-icon border p-px w-fit rounded-full overflow-hidden">
                 {logo && (
                     <img
                         src={logo}
                         alt={`${skillName} Logo`}
-                        className="skill-logo w-8 grayscale-75 transition-all duration-300 group-hover:grayscale-0"
+                        className="skill-logo w-8 scale-110 grayscale-75 transition-all duration-300 group-hover:grayscale-0"
                     />
                 )}
             </div>

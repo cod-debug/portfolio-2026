@@ -8,14 +8,14 @@ const sample_projects = [
     {
         title: "10Captcha Website",
         imgSrc: captchaImg,
-        link: "https://gldrp.com/10captcha/",
-        linkDisplay: "gldrp.com/10captcha/",
+        link: "https://10captcha.gldrp.com/",
+        linkDisplay: "10captcha.gldrp.com",
     },
     {
         title: "Up Version Website",
         imgSrc: upversionImg,
-        link: "https://gldrp.com/upversion/#/",
-        linkDisplay: "gldrp.com/upversion/",
+        link: "https://upversion.gldrp.com/",
+        linkDisplay: "upversion.gldrp.com",
     },
     {
         title: "Interactive Event Website",

@@ -3,15 +3,16 @@
 
 @theme {
     /* Backgrounds */
-    --color-primary-background: #EEF1F5;
-    --color-secondary-background: #E6E9EF;
+    --color-primary-background: #161520;
+    --color-secondary-background: #2c2b37;
 
     /* Text */
     --color-primary-text: #484f5f;
     --color-secondary-text: #6B7280;
     --color-primary-accent: #607696;
-    --color-secondary-accent: #CB9C20;
+    --color-secondary-accent: #84a3e8;
     --color-muted-labels: #9AA1AF;
+    --color-light: #dfdfdf;
 
     /* Accents */
     --color-accent-blue: #5A8DEE;
@@ -19,6 +20,7 @@
     --color-soft-green: #6FCF97;
     --color-accent-dark-blue: #2C3E50;
     --color-steal-blue: #546E7A;
+
 }
 
 ::-webkit-scrollbar-track {
@@ -86,15 +88,15 @@ body {
 .banner-me-shadows {
     border-radius: 50%;
     background: linear-gradient(225deg, #ffffff, #d6d9dd);
-    box-shadow: -20px 20px 60px #cacdd0,
-        20px -20px 60px #ffffff;
+    box-shadow: -3px 3px 5px #1969ab,
+        3px -3px 5px #d48825;
     width: fit-content;
 }
 
 .banner-me-img {
     border-radius: 50%;
     background: var(--color-primary-background);
-    box-shadow: inset -20px 20px 60px #cacdd0,
+    box-shadow: inset -20px 20px 60px #8e959b,
         inset 20px -20px 60px #ffffff;
 }
 
@@ -104,7 +106,7 @@ body {
     inset: 5%;
     border-radius: 50%;
     background: linear-gradient(225deg, #d6d9dd, #ffffff);
-    box-shadow: -20px 20px 60px #cacdd0,
+    box-shadow: -20px 20px 60px #b5c1cc,
         20px -20px 60px #ffffff;
 }
 
@@ -141,7 +143,6 @@ body {
         3px -3px 6px #ffffff;
 }
 
-.experience-section,
 .contact-section,
 .timeline-box {
     background: var(--color-primary-background);
@@ -151,15 +152,13 @@ body {
 
 .experience-section,
 .experience-inner {
-    border-bottom-right-radius: 50px;
+    border-bottom-right-radius: 30px;
     corner-bottom-right-shape: bevel;
 }
 
 .experience-inner,
 .contact-inner {
     background: var(--color-primary-background);
-    box-shadow: -4px 4px 8px #cacdd0,
-        4px -4px 8px #ffffff;
 }
 
 .project-preview-images {

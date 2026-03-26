@@ -68,7 +68,7 @@ function Button({ className, link, children, btnType = "light", ...props }) {
                 );
             };
             break;
-        case "light-lighter":
+        case "dark":
             output = function () {
                 return (
                     <div
@@ -78,13 +78,27 @@ function Button({ className, link, children, btnType = "light", ...props }) {
                     >
                         <a
                             {...props}
-                            className={`block w-fit text-accent-dark-blue cursor-pointer px-4 py-1 rounded-xl tracking-wider font-medium ${
+                            className={`block w-fit text-light bg-linear-to-tr from-[#191919] from-10% to-amber-500 border-2 border-amber-200 cursor-pointer px-4 py-2 rounded-md tracking-wider font-medium ${
                                 className || ""
                             }`}
                         >
                             {children}
                         </a>
                     </div>
+                );
+            };
+            break;
+        case "accent":
+            output = function () {
+                return (
+                    <a
+                        {...props}
+                        className={`w-fit text-light bg-linear-to-tr from-[#191919] from-10% to-amber-500 border-2 border-amber-200 cursor-pointer px-4 py-2 rounded-md tracking-wider font-medium ${
+                            className || ""
+                        }`}
+                    >
+                        {children}
+                    </a>
                 );
             };
     }

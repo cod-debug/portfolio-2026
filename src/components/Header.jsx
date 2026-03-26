@@ -16,14 +16,14 @@ function Header() {
             <Container>
                 <header className="px-4 sm:px-8">
                     <div className="flex justify-between items-center">
-                        <div className="text-primary-text">
-                            <div className="text-xl sm:text-2xl font-bold md:pl-5">
+                        <div className="text-white">
+                            <div className="text-xl sm:text-2xl font-bold">
                                 ROY DUEÑAS
                             </div>
                         </div>
 
                         <nav className="hidden md:flex">
-                            <ul className="flex gap-6 md:gap-16 text-steal-blue font-medium">
+                            <ul className="flex gap-6 md:gap-16 text-white font-medium">
                                 <li><HashLink smooth scroll={scrollWithOffset} to="/#home">ME</HashLink></li>
                                 <li><HashLink smooth scroll={scrollWithOffset} to="/#about">ABOUT</HashLink></li>
                                 <li><Link to="/projects">PROJECTS</Link></li>
@@ -67,10 +67,8 @@ function Header() {
                         </div>
                     )}
 
-                    <div className="items-center gap-2 mt-2 hidden md:flex">
-                        <div className="w-10 h-px bg-muted-labels opacity-20"></div>
-                        <div className="text-primary-accent text-xs">SOFTWARE DEVELOPER</div>
-                        <div className="grow h-px bg-muted-labels opacity-20"></div>
+                    <div className="items-center hidden md:flex">
+                        <div className="text-amber-200 text-xs">SOFTWARE DEVELOPER</div>
                     </div>
                 </header>
             </Container>

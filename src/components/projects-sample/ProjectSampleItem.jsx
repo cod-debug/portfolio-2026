@@ -17,8 +17,9 @@ function ProjectSampleItem({
                 target="_blank"
                 rel="noopener noreferrer"
                 referrerPolicy="no-referrer"
+                className="p-px rounded-lg block h-full bg-linear-to-r from-secondary-background via-amber-500 to-secondary-background group"
             >
-                <div className="sample-project-inner flex flex-col text-center text-primary-text rounded-lg">
+                <div className="sample-project-inner flex flex-col text-center text-light rounded-lg">
                     <div className="py-4 px-2">{title}</div>
                     <div className="overflow-hidden">
                         <img
@@ -27,15 +28,15 @@ function ProjectSampleItem({
                             className="w-full transition-all duration-300 group-hover:grayscale-0 group-hover:scale-125"
                         />
                     </div>
-                    <p className="py-4 text-primary-accent">{linkDisplay}</p>
+                    <p className="py-4 text-light">{linkDisplay}</p>
                     <div className="self-center p-4">
-                        <Button
-                            btnType="primary"
+                        <button
                             target="_blank"
                             rel="noopener noreferrer"
+                            className="bg-[#212637] text-light px-4 py-1 rounded shadow-2xl tracking-wider font-medium border-2 border-[#39405b] cursor-pointer transition-colors duration-300 hover:bg-[#39405b] hover:border-[#212637]"
                         >
                             VIEW PROJECT
-                        </Button>
+                        </button>
                     </div>
                 </div>
             </a>
