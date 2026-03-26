@@ -17,7 +17,7 @@ function ProjectSampleItem({
                 target="_blank"
                 rel="noopener noreferrer"
                 referrerPolicy="no-referrer"
-                className="p-px rounded-lg block h-full bg-linear-to-r from-secondary-background via-amber-500 to-secondary-background group"
+                className="p-px rounded-lg block h-full bg-linear-to-r from-secondary-background via-blue-100 to-secondary-background group"
             >
                 <div className="sample-project-inner flex flex-col text-center text-light rounded-lg">
                     <div className="py-4 px-2">{title}</div>

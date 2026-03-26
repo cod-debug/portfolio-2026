@@ -29,10 +29,10 @@ function About() {
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-4 text-light">
                 <div className="lg:col-span-4">
                     <FadeInUp>
-                        <div className="experience-section bg-linear-to-br from-amber-500 via-amber-200 to-primary-background rounded-xl p-0.5">
+                        <div className="experience-section bg-linear-to-br from-amber-300 via-amber-100 to-primary-background rounded-xl p-0.5">
                             <div className="experience-inner h-full rounded-xl p-4 bg-primary-background">
                                 <div className="flex flex-col gap-4 h-full">
-                                    <div className="flex items-center font-bold bg-linear-to-t from-amber-500 to-amber-200 text-transparent bg-clip-text text-6xl gap-4">
+                                    <div className="flex items-center font-bold bg-linear-to-t from-amber-300 to-amber-100 text-transparent bg-clip-text text-6xl gap-4">
                                         <div className="text-8xl ">
                                             {yearsOfExperience}+
                                         </div>
