@@ -43,21 +43,12 @@ function About() {
                                     </div>
                                     <Separator />
                                     <div className="grow">
-                                        <p className="text-justify">
-                                            I rebuilt a complex business web application
-                                            from the ground up, migrating it from
-                                            Angular to Vue.js (Quasar) in just three
-                                            months. The platform serves multiple user
-                                            types—seven in total—each with different
-                                            access levels, tools, and workflows,
-                                            resulting in a faster, more stable, and
-                                            easier-to-maintain system. I also created an
-                                            internal AI platform that allows company
-                                            teams to easily use AI-powered features
-                                            without worrying about technical complexity,
-                                            helping streamline internal operations and
-                                            future development.
-                                        </p>
+                                        <ul className="pl-6 list-disc">
+                                            <li>Build high-performance apps using Laravel & Vue</li>
+                                            <li>Help teams reduce manual work and streamline workflows</li>
+                                            <li>Rebuilt a 7-role system in under 3 months</li>
+                                            <li>Improved load speed and reduced system errors</li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>

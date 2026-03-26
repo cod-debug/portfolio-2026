@@ -93,7 +93,7 @@ function Button({ className, link, children, btnType = "light", ...props }) {
                 return (
                     <a
                         {...props}
-                        className={`w-fit text-light bg-linear-to-tr from-[#191919] from-10% to-amber-500 border-2 border-amber-200 cursor-pointer px-4 py-2 rounded-md tracking-wider font-medium ${
+                        className={`w-fit text-light bg-linear-to-tr from-[#191919] from-10% to-amber-500 border border-amber-200 cursor-pointer px-4 py-2 rounded-md tracking-wider font-medium ${
                             className || ""
                         }`}
                     >

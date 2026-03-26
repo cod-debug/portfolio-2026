@@ -58,12 +58,12 @@ function PreviewImagesModal({
                 <div className="col-span-1 pr-4 md:pt-4">
                     <div className="md:mt-0 rounded-lg">
                         <div className="rounded-lg">
-                            <h2 className="md:text-2xl text-primary-text font-bold">
+                            <h2 className="md:text-2xl text-secondary-accent font-bold">
                                 {project?.title}
                             </h2>
                             <Separator className="my-2" />
                             <p
-                                className="text-accent-dark-blue text-sm md:text-lg"
+                                className="text-light text-sm md:text-lg"
                                 dangerouslySetInnerHTML={{
                                     __html: project?.description,
                                 }}

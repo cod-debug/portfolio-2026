@@ -23,7 +23,7 @@ const sample_projects = [
         link: "https://10captcha.gldrp.com/",
         linkDisplay: "10captcha.gldrp.com",
         description:
-            "A web-based captcha solving platform built with <strong>React.js</strong>, focused on speed, usability, and a clean user interface for efficient task handling.",
+            "A web-based captcha solving platform built with <strong>React.js</strong>, focused on speed, usability, and a clean user interface for efficient task handling. Partnership with <a href='https://opteksolutions.com/' target='_blank' class='text-primary' style='color: #5A8DEE'>Optek Solutions</a>.",
     },
     {
         title: "Up Version Website",
@@ -31,7 +31,7 @@ const sample_projects = [
         link: "https://upversion.gldrp.com/",
         linkDisplay: "upversion.gldrp.com",
         description:
-            "A modern website for a graphics design school built using <strong>React.js</strong>, showcasing programs, services, and creative works with a visually engaging layout.",
+            "A modern website for a graphics design school built using <strong>React.js</strong>, showcasing programs, services, and creative works with a visually engaging layout. Partnership with <a href='https://opteksolutions.com/' target='_blank' class='text-primary' style='color: #5A8DEE'>Optek Solutions</a>.",
     },
     {
         title: "Interactive Event Website",
@@ -47,7 +47,7 @@ const sample_projects = [
         link: "https://optekpay.com/",
         linkDisplay: "optekpay.com",
         description:
-            "A fintech company website built with <strong>React.js</strong>, highlighting services, features, and user testimonials through a sleek and professional design.",
+            "A fintech company website built with <strong>React.js</strong>, highlighting services, features, and user testimonials through a sleek and professional design. Partnership with <a href='https://opteksolutions.com/' target='_blank' class='text-primary' style='color: #5A8DEE'>Optek Solutions</a>.",
     },
     {
         title: "Jhonna & Kerwin Wedding Website",
@@ -78,7 +78,6 @@ const sample_projects = [
     sparkData,
     pokemonData,
     paceData,
-    ticketingData,
 ];
 
 export default sample_projects;

@@ -5,11 +5,11 @@ export default function ProjectCarouselItem({ project, openPreviewImagesModal = 
         <div>
             <div className="grid grid-cols-5 p-8">
                 <div className="col-span-2 p-4 content-center">
-                    <div className="flex gap-4 flex-col">
-                        <div className="font-medium tracking-wide text-accent-dark-blue text-lg">
+                    <div className="flex gap-6 flex-col">
+                        <div className="font-medium tracking-wide text-blue-300 text-lg">
                             {project?.title}
                         </div>
-                        <div className="text-secondary-text line-clamp-7">
+                        <div className="text-light line-clamp-7">
                             {project?.description && (
                                 <p
                                     dangerouslySetInnerHTML={{
@@ -21,26 +21,26 @@ export default function ProjectCarouselItem({ project, openPreviewImagesModal = 
                         <div>
                             {project?.link && (
                                 <div className="flex">
-                                    <Button
-                                        className="rounded-4xl"
-                                        btnType="primary"
+                                    <a
                                         target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="bg-[#212637] text-light px-4 py-1 rounded shadow-2xl tracking-wider font-medium border-2 border-[#39405b] cursor-pointer transition-colors duration-300 hover:bg-[#39405b] hover:border-[#212637]"
                                         href={project?.link}
                                     >
-                                        Live Demo
-                                    </Button>
+                                        LIVE DEMO
+                                    </a>
                                 </div>
                             )}
                             {project?.previewImages && project?.previewImages.length > 0 && (
                                 <div className="flex">
-                                    <Button
-                                        className="rounded-4xl"
-                                        btnType="primary"
+                                    <button
+                                        className="bg-[#212637] text-light px-4 py-1 rounded shadow-2xl tracking-wider font-medium border-2 border-[#39405b] cursor-pointer transition-colors duration-300 hover:bg-[#39405b] hover:border-[#212637]"
+                                        btnType="dark"
                                         onClick={() => openPreviewImagesModal(project)}
 
                                     >
                                         View Screenshots
-                                    </Button>
+                                    </button>
                                 </div>
                             )}
                         </div>

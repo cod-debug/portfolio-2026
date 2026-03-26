@@ -12,19 +12,18 @@ function ProjectItem({ project, animationDelay = 0.2, openPreviewImagesModal = n
         <FadeInUp delay={animationDelay}>
             <div
                 key={project?.title}
-                className="project-card rounded-lg p-4 flex flex-col gap-4 h-full"
+                className="bg-linear-to-b from-primary-background to-secondary-background rounded-lg overflow-hidden flex flex-col gap-4 h-full"
             >
-                <div className="project-card-img-holder p-2 rounded-lg">
+                <div className="project-card-img-holder">
                     <img
                         alt={project?.title}
                         src={project?.imgSrc}
-                        className="rounded-lg"
                     />
                 </div>
-                <div className="font-medium tracking-wide text-accent-dark-blue text-lg">
+                <div className="font-medium tracking-wide text-secondary-accent text-lg px-4">
                     {project?.title}
                 </div>
-                <div className="text-secondary-text line-clamp-5">
+                <div className="text-light line-clamp-5 px-4">
                     {project?.description && (
                         <p
                             dangerouslySetInnerHTML={{
@@ -35,27 +34,25 @@ function ProjectItem({ project, animationDelay = 0.2, openPreviewImagesModal = n
                 </div>
                 <div className="grow"></div>
                 {project?.link && (
-                    <div className="flex justify-end">
-                        <Button
-                            className="rounded-4xl"
-                            btnType="light-lighter"
+                    <div className="flex justify-end p-4 pt-0">
+                        <a
+                            className="bg-[#212637] text-light px-4 py-1 rounded shadow-2xl tracking-wider font-medium border-2 border-[#39405b] cursor-pointer transition-colors duration-300 hover:bg-[#39405b] hover:border-[#212637]"
                             target="_blank"
                             href={project?.link}
                         >
                             View Project
-                        </Button>
+                        </a>
                     </div>
                 )}
                 {project?.previewImages && project?.previewImages.length > 0 && (
-                    <div className="flex justify-end">
-                        <Button
-                            className="rounded-4xl"
-                            btnType="light-lighter"
+                    <div className="flex justify-end p-4 pt-0">
+                        <button
+                            className="bg-[#212637] text-light px-4 py-1 rounded shadow-2xl tracking-wider font-medium border-2 border-[#39405b] cursor-pointer transition-colors duration-300 hover:bg-[#39405b] hover:border-[#212637]"
                             onClick={() => handleOpenPreviewImagesModal(project)}
 
                         >
                             View Screenshots
-                        </Button>
+                        </button>
                     </div>
                 )}
             </div>

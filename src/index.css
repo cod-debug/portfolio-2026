@@ -87,17 +87,14 @@ body {
 
 .banner-me-shadows {
     border-radius: 50%;
-    background: linear-gradient(225deg, #ffffff, #d6d9dd);
-    box-shadow: -3px 3px 5px #1969ab,
-        3px -3px 5px #d48825;
+    background: linear-gradient(225deg, #161520, #24232e);
     width: fit-content;
 }
 
 .banner-me-img {
     border-radius: 50%;
     background: var(--color-primary-background);
-    box-shadow: inset -20px 20px 60px #8e959b,
-        inset 20px -20px 60px #ffffff;
+    box-shadow: inset -20px 20px 60px #161520, inset 20px -20px 60px #24232f;
 }
 
 .banner-me-img .overlay {
@@ -105,9 +102,7 @@ body {
     z-index: 1;
     inset: 5%;
     border-radius: 50%;
-    background: linear-gradient(225deg, #d6d9dd, #ffffff);
-    box-shadow: -20px 20px 60px #b5c1cc,
-        20px -20px 60px #ffffff;
+    background: linear-gradient(225deg, #161520, #84a3e8);
 }
 
 .learn-more-button-container-light {
@@ -178,24 +173,11 @@ body {
     transition: all 0.3s ease;
 }
 
-.project-card {
-    background: var(--color-primary-background);
-    box-shadow: 3px 3px 6px #cfd2d5,
-        -3px -3px 6px #ffffff;
-}
-
-.project-card-img-holder {
-    background: var(--color-primary-background);
-    box-shadow: 2px 2px 5px #cacdd0,
-        -2px -2px 5px #ffffff;
-}
-
 .timeline-circle {
     aspect-ratio: 1/1;
     border-radius: 50%;
-    background: #EEF1F5;
-    box-shadow: 5px 5px 10px #c1c3c6,
-        -5px -5px 10px #ffffff;
+    background: var(--color-primary-background);
+    box-shadow: 3px 3px 5px #020202, -3px -3px 5px #1e1c29;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -205,15 +187,14 @@ body {
     width: 80%;
     aspect-ratio: 1/1;
     border-radius: 50%;
-    background: #EEF1F5;
-    box-shadow: inset 3px 3px 6px #c1c3c6,
-        inset -3px -3px 6px #ffffff;
+    background: var(--color-primary-background);
+    box-shadow: inset 3px 3px 6px #020202,
+        inset -3px -3px 6px #1e1c29;
 }
 
 .timeline-connector {
-    background: #EEF1F5;
-    box-shadow: 2px 2px 3px #d4d7d7,
-        -2px -2px 3px #ffffff;
+    background: var(--color-primary-background);
+    box-shadow: 2px 2px 3px #11101a, -2px -2px 3px #222229;
     left: 50%;
     top: 50%;
     z-index: -1;
@@ -234,9 +215,8 @@ body {
     position: absolute;
     width: 100%;
     height: 2px;
-    background: #EEF1F5;
-    box-shadow: 2px 2px 3px #d4d7d7,
-        -2px -2px 3px #ffffff;
+    background: var(--color-primary-background);
+    box-shadow: 2px 2px 3px #11101a, -2px -2px 3px #222229;
     top: 50%;
     transform: translateY(-50%);
     z-index: -1;
@@ -256,4 +236,8 @@ body {
 }
 .react-multiple-carousel__arrow--right {
     right: calc(1% + 1px)!important;
+}
+
+.project-card .react-multi-carousel-list .react-multiple-carousel__arrow {
+  z-index: 2;
 }

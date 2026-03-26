@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import Separator from "../Separator";
 import ProjectSampleItem from "./ProjectSampleItem";
 import { FadeInLeft, FadeInRight } from "../animations/Animations";
@@ -36,17 +35,6 @@ export default function ProjectSamples() {
                     />
                 ))}
             </div>
-            <FadeInRight>
-                <div className="w-fit m-4">
-                    <Link to="/projects">
-                        <div className="p-0.5 bg-linear-to-tl  from-[#959494] to-[#827233] rounded-md">
-                            <button className="w-fit text-light bg-primary-background cursor-pointer px-4 py-2 rounded-md tracking-wider font-medium flex items-center">
-                                <span>SEE MORE</span> <RxCaretRight className="text-3xl -mr-2 text-light" />
-                            </button>
-                        </div>
-                    </Link>
-                </div>
-            </FadeInRight>
         </div>
     );
 }
