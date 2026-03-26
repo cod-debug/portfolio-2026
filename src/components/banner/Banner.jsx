@@ -4,6 +4,7 @@ import { FadeInLeft, FadeInRight, FadeInUp } from "../animations/Animations";
 import Button from "../Button";
 import Container from "../Container";
 import Separator from "../Separator";
+import { HashLink } from "react-router-hash-link";
 
 function Banner() {
     return (
@@ -33,8 +34,10 @@ function Banner() {
                     <FadeInRight delay={0.8}>
                         <div className="flex flex-col md:flex-row gap-2">
                             <div className="flex justify-center md:justify-start">
-                                <Button href="/#/#contact" btnType="accent">
-                                    CONTACT ME
+                                <Button btnType="accent">
+                                    <HashLink smooth to="/#contact" className="btn btn-accent">
+                                        CONTACT ME
+                                    </HashLink>
                                 </Button>
                             </div>
                             <div>

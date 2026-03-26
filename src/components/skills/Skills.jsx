@@ -7,7 +7,7 @@ import { technicalSkillsProgrammingLanguages, technicalSkillsDatabases, technica
 
 function Skills() {
     return (
-        <Container className="my-12 text-primary-accent" id="skills">
+        <Container className="my-12 text-light" id="skills">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <FadeInRight>
                     <div className="skills-container p-px rounded-lg h-fit bg-linear-to-br from-primary-background via-secondary-accent to-primary-background">
