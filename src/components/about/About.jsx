@@ -46,8 +46,8 @@ function About() {
                                         <ul className="pl-6 list-disc">
                                             <li>Build high-performance apps using Laravel & Vue</li>
                                             <li>Help teams reduce manual work and streamline workflows</li>
-                                            <li>Rebuilt a 7-role system in under 3 months</li>
-                                            <li>Improved load speed and reduced system errors</li>
+                                            <li>Modernized a mobile application by migrating it from Xamarin to Flutter</li>
+                                            <li>Built a complete point-of-sale system with inventory management</li>
                                         </ul>
                                     </div>
                                 </div>
