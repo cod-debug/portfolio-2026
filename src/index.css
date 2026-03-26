@@ -143,11 +143,9 @@ body {
         3px -3px 6px #ffffff;
 }
 
-.contact-section,
-.timeline-box {
+.contact-section {
     background: var(--color-primary-background);
-    box-shadow: -4px 4px 8px #cacdd0,
-        4px -4px 8px #ffffff;
+    box-shadow: -2px 2px 4px #2c2b37, 2px -2px 4px #161520;
 }
 
 .experience-section,
