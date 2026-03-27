@@ -23,7 +23,7 @@ function Header() {
                             </div>
                         </div>
 
-                        <nav className="hidden md:flex">
+                        <nav className="hidden lg:flex">
                             <ul className="flex gap-6 md:gap-16 text-white font-medium items-center text-sm">
                                 <li><HashLink smooth scroll={scrollWithOffset} to="/#home">HOME</HashLink></li>
                                 <li><HashLink smooth scroll={scrollWithOffset} to="/#about">ABOUT</HashLink></li>
@@ -40,7 +40,7 @@ function Header() {
                             </ul>
                         </nav>
 
-                        <div className="md:hidden flex items-center">
+                        <div className="lg:hidden flex items-center">
                             <button
                                 className="text-primary-accent focus:outline-none"
                                 onClick={() => setIsOpen(!isOpen)}
@@ -64,8 +64,8 @@ function Header() {
                     </div>
 
                     {isOpen && (
-                        <div className="md:hidden">
-                            <ul className="flex flex-col gap-2 text-secondary-accent font-medium absolute bg-primary-background w-full left-0 rounded-lg py-4 px-8">
+                        <div className="lg:hidden">
+                            <ul className="flex flex-col gap-2 text-secondary-accent font-medium absolute bg-primary-background w-full left-0 rounded-lg py-4 px-8" onClick={() => setIsOpen(!isOpen)}>
                                 <li className="border-b border-muted-labels/20 py-2"><HashLink smooth scroll={scrollWithOffset} to="/#home">HOME</HashLink></li>
                                 <li className="border-b border-muted-labels/20 py-2"><HashLink smooth scroll={scrollWithOffset} to="/#about">ABOUT</HashLink></li>
                                 <li className="border-b border-muted-labels/20 py-2"><Link to="/projects">PROJECTS</Link></li>
@@ -75,7 +75,7 @@ function Header() {
                         </div>
                     )}
 
-                    <div className="items-center hidden md:flex">
+                    <div className="items-center hidden lg:flex">
                         <div className="text-amber-200 text-xs">Laravel & Vue Specialist</div>
                     </div>
                 </header>
